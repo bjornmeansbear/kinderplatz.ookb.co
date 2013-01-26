@@ -1,0 +1,386 @@
+/*============================================
+  New Office of KB styles added July 2011
+============================================*/
+/* georgia as font */ .bodytxt, .bulletlist, .contacthead, .contactbody, .tablehead, .tablenote, .tablecol1, .tablecol2, .tablecol2a, .subnote { font-family: Georgia, "Times New Roman", Times, serif; }
+/* verdana as font */ dt, .breadcrumb, .approach ul.links li a, .testimonial div.quote p.byline, h4.bordertop, table.bottom.columns h4, table.bottom.columns ul.bodytxt li strong  { font-family: Verdana, Helvetica, Arial, Sans-serif; }
+/* 16px type */ .contacthead { font-size: 16px; }
+/* 14px type */ .bodytxt, .bulletlist, .tablehead { font-size: 14px; }
+/* 13px type */ .tablecol1, .tablecol2, .tablecol2a, .approach ul.links li a { font-size: 13px; }
+/* 12px type */ .contactbody, .breadcrumb, dt, table.bottom.columns .bodytxt { font-size: 12px; }
+/* 11px type */ .tablenote, .subnote, h4.bordertop, table.bottom.columns h4 { font-size: 11px; }
+/* 10px type */ table.bottom.columns ul.bodytxt li strong, .testimonial div.quote p.byline { font-size: 10px; }
+
+/* ===================================== */
+
+.clear {clear:both;}
+.left {float:left;}
+.right {float:right;}
+
+/* ===================================== */
+
+table.intro,
+table.approach,
+table.agegroups,
+table.contact,
+table.gallery,
+table.credentials { margin-bottom: 40px; }
+
+/* ===================================== */
+
+table.home a.bigtype {
+  display:block;
+  height:139px;
+  width:760px;
+  text-align:center;
+}
+
+table.home p.bigtype {
+  /*why isn't this working?*/
+  background: url(img/pleasecall.jpg) center center no-repeat;
+  height:139px;
+  width:760px;
+  text-align:center;
+  text-indent:-99999px;
+  overflow:hidden;
+}
+
+/* ===================================== */
+
+.bodytxt {
+	color: #333333;
+	line-height: 22px;
+	margin-bottom: 6px;
+	padding-right: 25px;
+	text-align: left;
+}
+
+.bulletlist {
+	line-height: 20px;
+	color: #333333;
+	margin: 5px 0 5px -18px;
+	list-style-image: url(img/bullet-arrow-green.gif);
+}
+
+.contacthead {
+	color: #999999;
+	font-weight: normal;
+	line-height: 8px;
+	margin-top: 0px;
+	margin-bottom: -11px;
+}
+
+.contactbody {
+	line-height: 18px;
+	margin-bottom: 0px;
+	margin-top: 4px;
+}
+
+.tablehead {
+	font-weight: bold;
+	margin-top: 6px;
+	margin-bottom: 0px;
+	background-color: white;
+}
+
+.tablenote {
+	color: #666666;
+	line-height: 15px;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+
+.tablecol1 {
+	color: #333333;
+	font-weight: normal;
+	vertical-align: bottom;
+	text-align: left;
+}
+
+.tablecol2 {
+	color: #333333;
+	font-weight: normal;
+	text-align: right;
+	vertical-align: bottom;
+}
+
+.tablecol2a {
+	color: #333333;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+.subnote {
+	color: #666666;
+	line-height: 15px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding-right: 30px;
+}
+
+/* general, all over site stuff
+=======================================*/
+cite, em {font-style: italic;}
+strong {font-weight: bold;}
+.txtr, .tuition table#containerTable.bordertop tr.tablehead td.tablenote, .tuition .tablecol2a, .sidebar p.sidebarlink {text-align: right;}
+td.contentarea { padding-top: 32px; padding-bottom: 50px; }
+
+.c1 { vertical-align: top; width: 100%; }
+.c2 { vertical-align: top; width:  50%; }
+.c3 { vertical-align: top; width:  33%; }
+.c4 { vertical-align: top; width:  25%; }
+
+/* make all uppercase */
+dt,
+.testimonial div.quote p.byline,
+h4.bordertop,
+table.bottom.columns h4,
+table.bottom.columns ul.bodytxt li strong 
+{ text-transform: uppercase; }
+
+/* letterspace 1px */
+h3, 
+dt, 
+.testimonial div.quote p.byline 
+{ letter-spacing: 1px; }
+
+/* #ff0000 as font color */
+.red,
+dt,
+a:hover,
+a.active,
+.agegroups a.active,
+.approach .breadcrumb a,
+.approach .columns h4 a:hover,
+.approach .columns h4 a.active, 
+p.sidebarlink a:hover 
+{ color:#ff0000; }
+
+/* LINKS */
+a {text-decoration: none;}
+.intro h4.bordertop a {color:#FF6600;}
+p.sidebarlink a, .agegroups .breadcrumb a { color: #9999CC; }
+
+/* breadcrumb */
+.breadcrumb { color: #666; }
+
+/* border-top stuff */
+.bordertop,
+div.agegroup
+{border-top: 1px #999 solid;}
+
+.bordertop {
+  margin-top: 40px !important;
+  padding-top: 20px !important;
+}
+
+/* dl,dt,dd */
+dl, dt, dd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  border-top: 1px solid #DDD;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 6px;
+  padding-top: 20px;
+}
+
+dd p {margin: 0;}
+
+/* approach pages */
+.approach h3,
+.approach .columns h4,
+.approach .columns h4 a {
+  color: #A2D700;
+}
+
+.approach table.bottom.columns {padding-top: 10px !important;}
+
+.approach ul.links li a {
+  color: white;
+}
+
+.approach ul.links li a:hover,
+.approach ul.links li a:active,
+.approach ul.links li a:focus {
+  text-decoration: underline;
+}
+
+/* age group pages */
+.agegroups h3,
+.agegroups .columns h4,
+.agegroups .columns h4 a {
+  color: #9999CC;
+}
+
+div.agegroup {
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+div#summerschool {
+  border-bottom: 1px #999 solid;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+div.agegroup table {
+  margin: 10px 0;
+}
+
+.approach ul.links {
+  list-style: none;
+  margin:0 0 50px 0;
+  padding: 0;
+}
+
+.approach ul.links li {
+  background: #ff0000;
+  margin: 0;
+  padding: 5px;
+}
+
+.sidebar img { 
+  margin-bottom: 18px; 
+}
+
+.testimonial div.quote {
+  margin: 0 0 30px 0
+}
+
+.testimonial div.quote p.bodytxt {
+  text-indent: -6px;
+  margin-bottom: 0;
+}
+
+.testimonial div.quote p.byline {
+  color: #FF6600;
+  font-weight: bold;
+  margin: 6px 0 0 0;
+  text-indent: -6px;
+}
+
+.tuition .bordertop {
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+}
+
+.tuition .subnote {
+  margin-right: 30px;
+  padding-right: 0
+}
+
+table.zebra tr.odd, table#containerTable.bordertop tr.odd { background: #EEE; }
+table.zebra tr.even { background: #EEEEFF;}
+table#containerTable.bordertop tr.even { background: #F9FFF3;}
+table.zebra tr td, table#containerTable.bordertop tr td { height: auto; padding: 6px 2px; }
+table#containerTable tr.first td, table.zebra tr.first td { border-top: 2px #777 solid !important; }
+table#containerTable tr.last td, table.zebra tr.last td { border-bottom: 2px #777 solid !important; }
+
+table.zebra {
+  margin-bottom: 20px;
+}
+
+.tuition .tablecol1 {
+	background: none; 
+}
+                  
+h4.bordertop,
+table.bottom.columns h4 {
+  margin: 0 0 5px 0;
+}
+
+table.bottom.columns .bodytxt {
+  line-height: 20px;
+  margin: 0 0 5px 0;
+  padding: 0 7px 0 0;
+}
+
+table.bottom.columns ul.bodytxt {
+  list-style: none;
+}
+
+/*.credentials .sidebar {padding-top: 82px;} /* with staff link */
+.credentials .sidebar {padding-top: 23px;text-align: right;} /* without staff link and title img in sidebar */
+.credentials .sidebar p.sidebarlink {padding-right:40px;}
+.credentials .sidebar p.sidebarlink a,
+.credentials h4 { color:#CC6699;}
+
+/* gallery page(s) */
+td#gallery h6 {
+  color: #999;
+  font-family: Verdana, helvetica, arial, sans-serif;
+  font-size: 66%;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0 0 5px 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+td#gallery ul.photos {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+td#gallery ul.photos li {
+  display: block;
+  float: left;
+  height: 100px;
+  margin: 0 10px 10px 0;
+  padding: 0;
+  width: 100px;
+}
+
+td#gallery ul.photos li.seventh,
+td#gallery ul.photos li.last {
+  margin-right:0px;
+}
+
+td#gallery ul.photos li a {
+  background: transparent;
+  display: block;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+a img {
+  border: none;
+}
+
+td#gallery h4.bordertop {
+  color: #C76098;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0 -19px !important;
+  padding: 10px 19px 10px 19px !important;
+}
+
+td#gallery div.container {
+  background: #eee;
+  margin: 0 -19px;
+  padding: 0 19px 20px 19px;
+}
+
+td#gallery div.container.odd {
+  background: #f3dee9;
+}
+
+td#gallery div.container.last {
+  border-bottom: 1px #999 solid;
+}
+
+table.contact td.sidebar p.sidebarlink,
+table.contact td.sidebar p.sidebarlink a {
+	color:#FF0000;
+}
