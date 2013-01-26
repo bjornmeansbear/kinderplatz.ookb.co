@@ -16,6 +16,9 @@
 .left {float:left;}
 .right {float:right;}
 
+.add-top { margin-top: .33em; }
+.add-bottom { margin-bottom: .33em; }
+
 /* ===================================== */
 
 table.intro,
