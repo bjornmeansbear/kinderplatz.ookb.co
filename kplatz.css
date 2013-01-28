@@ -203,6 +203,7 @@ dd p {margin: 0;}
 
 .approach table.bottom.columns {padding-top: 10px !important;}
 
+.agegroups ul.links li a,
 .approach ul.links li a {
   color: white;
 }
@@ -235,16 +236,25 @@ div.agegroup table {
   margin: 10px 0;
 }
 
+.agegroups ul.links,
 .approach ul.links {
   list-style: none;
   margin:0 0 50px 0;
   padding: 0;
 }
 
+.agegroups ul.links li,
 .approach ul.links li {
-  background: #ff0000;
   margin: 0;
   padding: 5px;
+}
+
+.agegroups ul.links li {
+  background: #9999CC;
+}
+
+.approach ul.links li {
+  background: #ff0000;
 }
 
 .sidebar img { 
