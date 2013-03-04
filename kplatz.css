@@ -21,6 +21,9 @@
 .add-top { margin-top: .33em; }
 .add-bottom { margin-bottom: .33em; }
 
+hr.add-top {margin-top: 2em;}
+hr.add-bottom {margin-bottom: 2em;}
+
 /* ===================================== */
 
 table.intro,
