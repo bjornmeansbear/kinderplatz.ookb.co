@@ -177,6 +177,8 @@ a.active,
 p.sidebarlink a:hover 
 { color:#ff0000; }
 
+.blue { color: #9999C8; }
+
 /* LINKS */
 a {text-decoration: none;}
 .intro h4.bordertop a {color:#FF6600;}
@@ -203,10 +205,12 @@ a.underlined:hover {
 .intro .underlined     { border-color:#FF664F; }
 .agegroups .underlined { border-color:#9999CC; }
 .tuition .underlined   { border-color:#B3F544; }
+.approach .underlined  { border-color:#D4F74A; }
 
 .intro .underlined:hover     { background:#FF664F; }
 .agegroups .underlined:hover { background:#9999CC; }
 .tuition .underlined:hover   { background:#B3F544; }
+.approach .underlined:hover  { background:#D4F74A; }
 
 /* breadcrumb */
 .breadcrumb { color: #666; }
@@ -336,10 +340,17 @@ div.agegroup table {
 
 table.zebra tr.odd, table#containerTable.bordertop tr.odd { background: #EEE; }
 table.zebra tr.even { background: #EEEEFF;}
+.approach table.zebra tr.even { background: #f7fddc; }
 table#containerTable.bordertop tr.even { background: #F9FFF3;}
 table.zebra tr td, table#containerTable.bordertop tr td { height: auto; padding: 6px 2px; }
 table#containerTable tr.first td, table.zebra tr.first td { border-top: 2px #777 solid !important; }
 table#containerTable tr.last td, table.zebra tr.last td { border-bottom: 2px #777 solid !important; }
+
+table.zebra tr.section td { border-top: 10px solid white; }
+.approach table.zebra tr.odd.section { background: #666; color:white;}
+.approach table.zebra tr.even.section { background: #738f07; color:white;}
+.approach table.zebra tr.odd.section td, .approach table.zebra tr.even.section td { color:white; padding: 6px 4px; font-size: 95%;}
+
 
 table.zebra {
   margin-bottom: 20px;
