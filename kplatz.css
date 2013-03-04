@@ -1,11 +1,11 @@
 /*============================================
   New Office of KB styles added July 2011
 ============================================*/
-/* georgia as font */ .bodytxt, .bulletlist, .contacthead, .contactbody, .tablehead, .tablenote, .tablecol1, .tablecol2, .tablecol2a, .subnote { font-family: Georgia, "Times New Roman", Times, serif; }
+/* georgia as font */ .bodytxt, .bulletlist, .contacthead, .contactbody, .tablehead, .tablenote, .tablecol1, .tablecol2, .tablecol2a, .tablecol-centered, .subnote { font-family: Georgia, "Times New Roman", Times, serif; }
 /* verdana as font */ dt, .breadcrumb, .approach ul.links li a, .testimonial div.quote p.byline, h4.bordertop, table.bottom.columns h4, table.bottom.columns ul.bodytxt li strong  { font-family: Verdana, Helvetica, Arial, Sans-serif; }
 /* 16px type */ .contacthead { font-size: 16px; }
 /* 14px type */ .bodytxt, .bulletlist, .tablehead { font-size: 14px; }
-/* 13px type */ .tablecol1, .tablecol2, .tablecol2a, .approach ul.links li a { font-size: 13px; }
+/* 13px type */ .tablecol1, .tablecol2, .tablecol2a, .tablecol-centered, .approach ul.links li a { font-size: 13px; }
 /* 12px type */ .contactbody, .breadcrumb, dt, table.bottom.columns .bodytxt { font-size: 12px; }
 /* 11px type */ .tablenote, .subnote, h4.bordertop, table.bottom.columns h4 { font-size: 11px; }
 /* 10px type */ table.bottom.columns ul.bodytxt li strong, .testimonial div.quote p.byline { font-size: 10px; }
@@ -15,6 +15,8 @@
 .clear {clear:both;}
 .left {float:left;}
 .right {float:right;}
+
+.centered-text { text-align: center; }
 
 .add-top { margin-top: .33em; }
 .add-bottom { margin-bottom: .33em; }
@@ -92,25 +94,26 @@ table.home p.bigtype {
 	margin-bottom: 0px;
 }
 
-.tablecol1 {
+.tablecol1, .tablecol2, .tablecol2a, .tablecol-centered {
 	color: #333333;
 	font-weight: normal;
-	vertical-align: bottom;
+	vertical-align: middle;
+}
+
+.tablecol1 {
 	text-align: left;
 }
 
 .tablecol2 {
-	color: #333333;
-	font-weight: normal;
 	text-align: right;
-	vertical-align: bottom;
 }
 
 .tablecol2a {
-	color: #333333;
-	font-weight: normal;
 	text-align: left;
-	vertical-align: bottom;
+}
+
+.tablecol-centered {
+	text-align: center;
 }
 
 .subnote {
@@ -119,6 +122,14 @@ table.home p.bigtype {
 	margin-top: 8px;
 	margin-bottom: 8px;
 	padding-right: 30px;
+}
+
+.tablecol-centered .subnote,
+.tuition .tablecol-centered .subnote {
+	text-align: center;
+	text-indent: 0;
+	padding: 0;
+	margin: 0;
 }
 
 /* general, all over site stuff
@@ -164,13 +175,40 @@ a {text-decoration: none;}
 .intro h4.bordertop a {color:#FF6600;}
 p.sidebarlink a, .agegroups .breadcrumb a { color: #9999CC; }
 
+a.underlined {
+  color: #999999;
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
+  /* add fades to hover state changes... */
+          transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+     -moz-transition: all 300ms ease-in-out;
+       -o-transition: all 300ms ease-in-out;
+      -ms-transition: all 300ms ease-in-out;
+}
+
+a.underlined:hover {
+  color: black;
+}
+
+.intro .underlined     { border-color:#FF664F; }
+.agegroups .underlined { border-color:#9999CC; }
+.tuition .underlined   { border-color:#B3F544; }
+
+.intro .underlined:hover     { background:#FF664F; }
+.agegroups .underlined:hover { background:#9999CC; }
+.tuition .underlined:hover   { background:#B3F544; }
+
 /* breadcrumb */
 .breadcrumb { color: #666; }
 
 /* border-top stuff */
 .bordertop,
-div.agegroup
-{border-top: 1px #999 solid;}
+div.agegroup {
+  border-top: 1px #999 solid;
+  }
 
 .bordertop {
   margin-top: 40px !important;
