@@ -24,6 +24,8 @@
 hr.add-top {margin-top: 2em;}
 hr.add-bottom {margin-bottom: 2em;}
 
+h4.add-top {margin-top: 2em; margin-bottom: 0;}
+
 /* ===================================== */
 
 table.intro,
@@ -150,13 +152,15 @@ td.contentarea { padding-top: 32px; padding-bottom: 50px; }
 /* make all uppercase */
 dt,
 .testimonial div.quote p.byline,
+h4,
 h4.bordertop,
 table.bottom.columns h4,
 table.bottom.columns ul.bodytxt li strong 
 { text-transform: uppercase; }
 
 /* letterspace 1px */
-h3, 
+h3,
+h4, 
 dt, 
 .testimonial div.quote p.byline 
 { letter-spacing: 1px; }
@@ -437,4 +441,17 @@ td#gallery div.container.last {
 table.contact td.sidebar p.sidebarlink,
 table.contact td.sidebar p.sidebarlink a {
 	color:#FF0000;
+}
+
+/* Global H4 styles and custom colors per section */
+
+h4 {
+font-family: Verdana, Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: bold;
+letter-spacing: 1px;
+text-align: start;
+text-transform: uppercase;
+white-space: normal;
 }
