@@ -365,12 +365,6 @@ table.bottom.columns h4 {
   margin: 0 0 5px 0;
 }
 
-table.bottom.columns .bodytxt {
-  line-height: 20px;
-  margin: 0 0 5px 0;
-  padding: 0 7px 0 0;
-}
-
 table.bottom.columns ul.bodytxt {
   list-style: none;
 }
@@ -465,4 +459,23 @@ letter-spacing: 1px;
 text-align: start;
 text-transform: uppercase;
 white-space: normal;
+}
+
+/* Fixing UL style problems on enrichment pages */
+
+table.programs h4 {
+  margin-bottom: 12px !important;
+}
+
+table.programs ul {
+  border-bottom: 1px solid #DEDEDE;
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+
+table.programs ul li {
+  border-top: 1px solid #DEDEDE;
+  line-height: 16px;
+  margin: 0 0 8px 0;
+  padding: 6px 0 0 0;
 }
