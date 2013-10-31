@@ -20,6 +20,7 @@
 
 .add-top { margin-top: .33em; }
 .add-bottom { margin-bottom: .33em; }
+.no-margin, li .no-margin {margin: 0;}
 
 hr.add-top {margin-top: 2em;}
 hr.add-bottom {margin-bottom: 2em;}
@@ -450,7 +451,7 @@ table.contact td.sidebar p.sidebarlink a {
 
 /* Global H4 styles and custom colors per section */
 
-h4 {
+h4, h5 {
 font-family: Verdana, Helvetica, Arial, sans-serif;
 font-size: 12px;
 font-style: normal;
@@ -459,6 +460,13 @@ letter-spacing: 1px;
 text-align: start;
 text-transform: uppercase;
 white-space: normal;
+}
+
+.tuition h5 {
+  background-color: #cf9;
+  color: black;
+  padding: 3px;;
+  margin-bottom: 0;
 }
 
 /* Fixing UL style problems on enrichment pages */
