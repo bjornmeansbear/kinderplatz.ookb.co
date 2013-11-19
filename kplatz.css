@@ -21,6 +21,7 @@
 .add-top { margin-top: .33em; }
 .add-bottom { margin-bottom: .33em; }
 .no-margin, li .no-margin {margin: 0;}
+.no-indent { margin-left: 0; padding-left: 0; }
 
 hr.add-top {margin-top: 2em;}
 hr.add-bottom {margin-bottom: 2em;}
@@ -171,32 +172,46 @@ dt,
 dt,
 a:hover,
 a.active,
-.agegroups a.active,
 .approach .breadcrumb a,
 .approach .columns h4 a:hover,
 .approach .columns h4 a.active, 
-p.sidebarlink a:hover 
-{ color:#ff0000; }
+p.sidebarlink a:hover { 
+  color:#ff0000;
+}
+
+.agegroups a.active { color: #448; text-decoration: underline; }
+.agegroups p.sidebarlink a:hover { color: #224; }
 
 .blue { color: #9999C8; }
 
 /* LINKS */
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+  /* add fades to hover state changes... */
+        transition: all 300ms ease-in-out;
+-webkit-transition: all 300ms ease-in-out;
+   -moz-transition: all 300ms ease-in-out;
+     -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+}
 .intro h4.bordertop a {color:#FF6600;}
 p.sidebarlink a, .agegroups .breadcrumb a { color: #9999CC; }
 
-a.underlined {
+.intro .bodytxt a { color: #FF6600; }
+.approach .bodytxt a { color: #88b500; }
+
+.intro .bodytxt a:hover,
+.approach .bodytxt a:hover {
   color: #999999;
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+a.underlined {
+  color: #999 !important;
+  text-decoration: none !important;
   border: none;
   border-bottom: 1px solid;
   padding-bottom: 1px;
-  /* add fades to hover state changes... */
-          transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
-     -moz-transition: all 300ms ease-in-out;
-       -o-transition: all 300ms ease-in-out;
-      -ms-transition: all 300ms ease-in-out;
 }
 
 a.underlined:hover {
@@ -208,7 +223,7 @@ a.underlined:hover {
 .tuition .underlined   { border-color:#B3F544; }
 .approach .underlined  { border-color:#D4F74A; }
 
-.intro .underlined:hover     { background:#FF664F; }
+.intro .underlined:hover     { background:#FF664F; color: white !important; }
 .agegroups .underlined:hover { background:#9999CC; }
 .tuition .underlined:hover   { background:#B3F544; }
 .approach .underlined:hover  { background:#D4F74A; }
@@ -246,9 +261,10 @@ dd p {margin: 0;}
 
 /* approach pages */
 .approach h3,
+.approach h4,
 .approach .columns h4,
 .approach .columns h4 a {
-  color: #A2D700;
+  color: #88b500;
 }
 
 .approach table.bottom.columns {padding-top: 10px !important;}
@@ -266,6 +282,8 @@ dd p {margin: 0;}
 
 /* age group pages */
 .agegroups h3,
+.agegroups h4,
+.agegroups .bodytxt strong,
 .agegroups .columns h4,
 .agegroups .columns h4 a {
   color: #9999CC;
@@ -465,8 +483,8 @@ white-space: normal;
 .tuition h5 {
   background-color: #cf9;
   color: black;
-  padding: 3px;;
   margin-bottom: 0;
+  padding: 3px;
 }
 
 /* Fixing UL style problems on enrichment pages */
