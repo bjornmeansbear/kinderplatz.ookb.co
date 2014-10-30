@@ -157,14 +157,14 @@ dt,
 h4,
 h4.bordertop,
 table.bottom.columns h4,
-table.bottom.columns ul.bodytxt li strong 
+table.bottom.columns ul.bodytxt li strong
 { text-transform: uppercase; }
 
 /* letterspace 1px */
 h3,
-h4, 
-dt, 
-.testimonial div.quote p.byline 
+h4,
+dt,
+.testimonial div.quote p.byline
 { letter-spacing: 1px; }
 
 /* #ff0000 as font color */
@@ -174,8 +174,8 @@ a:hover,
 a.active,
 .approach .breadcrumb a,
 .approach .columns h4 a:hover,
-.approach .columns h4 a.active, 
-p.sidebarlink a:hover { 
+.approach .columns h4 a.active,
+p.sidebarlink a:hover {
   color:#ff0000;
 }
 
@@ -224,7 +224,7 @@ a.underlined:hover {
 .approach .underlined  { border-color:#D4F74A; }
 
 .intro .underlined:hover     { background:#FF664F; color: white !important; }
-.agegroups .underlined:hover { background:#9999CC; }
+.agegroups .underlined:hover { background:#9999CC; color: white !important; }
 .tuition .underlined:hover   { background:#B3F544; }
 .approach .underlined:hover  { background:#D4F74A; }
 
@@ -325,8 +325,8 @@ div.agegroup table {
   background: #ff0000;
 }
 
-.sidebar img { 
-  margin-bottom: 18px; 
+.sidebar img {
+  margin-bottom: 18px;
 }
 
 .testimonial div.quote {
@@ -376,9 +376,9 @@ table.zebra {
 }
 
 .tuition .tablecol1 {
-	background: none; 
+	background: none;
 }
-                  
+
 h4.bordertop,
 table.bottom.columns h4 {
   margin: 0 0 5px 0;
