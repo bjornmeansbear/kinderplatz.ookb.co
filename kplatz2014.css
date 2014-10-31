@@ -10,6 +10,30 @@
   clear: both;
 }
 
+/** some grid-y things **/
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.one-sixth      { float:left; padding: 0 10px; width: 16.666666%; }
+.one-quarter    { float:left; padding: 0 10px; width: 25%; }
+.one-third      { float:left; padding: 0 10px; width: 33.333333%;}
+.one-half       { float:left; padding: 0 10px; width: 50%; }
+.two-thirds     { float:left; padding: 0 10px; width: 66.666666%; }
+.three-quarters { float:left; padding: 0 10px; width: 75%; }
+.one-whole      { float:left; padding: 0 10px; width: 100%; }
+
+.offset-one-sixth      { margin-left: 16.666666%; }
+.offset-one-quarter    { margin-left: 25%; }
+.offset-one-third      { margin-left: 33.333333%; }
+.offset-one-half       { margin-left: 50%; }
+.offset-two-thirds     { margin-left: 66.666666%; }
+.offset-three-quarters { margin-left: 75%; }
+
+/*************************/
+
 html, body {
   margin: 0;
   padding: 0;
@@ -22,7 +46,7 @@ body {
   padding-bottom: 100px;
 }
 
-#wrapper, nav#site-nav {
+#wrapper {
   margin: 0 auto;
   max-width: 822px;
 }
@@ -30,6 +54,8 @@ body {
 #wrapper {
   border: 1px solid gray;
   padding: 20px;
+  margin-bottom: 100px;
+  margin-top: 70px;
 }
 
 a {
@@ -66,6 +92,17 @@ ul.grid li {
   margin: 10px;
 }
 
+#site-nav {
+  margin-bottom: 10px;
+  /**/
+  background: white;
+  width: 100%;
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+}
+
 #site-nav ul li {
   display: inline-block;
   width: 127.5px;
@@ -79,6 +116,14 @@ ul.grid li {
 #site-nav ul li a:hover {
   background: rgba(255,0,0,1);
   color: white;
+}
+
+/***** Active sitenav stuff *****/
+#site-nav .active a {
+  color: white;
+}
+.intro #site-nav .active a {
+  background: rgba(255,102,0,1);
 }
 
 /***** homepage grid *****/
