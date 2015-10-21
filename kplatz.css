@@ -505,3 +505,28 @@ table.programs ul li {
   margin: 0 0 8px 0;
   padding: 6px 0 0 0;
 }
+
+/** 2015 additions **/
+blockquote.callout {
+  margin: 3em 0 3em -16em;
+  width: 90%;
+  font-family: sans-serif;
+  font-size: 74%;
+  color: #9999CC;
+}
+
+.pleasenote {
+  font-size: 75%;
+}
+
+h1.big {
+  font-family: helvetica, arial, sans-serif;
+  text-align: right;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/** colors **/
+.green      { color: #9f3; }
+.darkgreen  { color: #6c0; }
+.red        { color: #f00; }
