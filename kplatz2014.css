@@ -1,5 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
 * {
   box-sizing: border-box;
   position: relative;
