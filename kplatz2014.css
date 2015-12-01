@@ -2,9 +2,13 @@
 
 * {
   box-sizing: border-box;
+  position: relative;
 }
 
-.clearfix:after {
+.clearfix:after,
+.row:after,
+.group:after,
+.grouped:after{
   content: "";
   display: table;
   clear: both;
@@ -12,26 +16,27 @@
 
 /** some grid-y things **/
 
-.row {
-  margin-left: -10px;
-  margin-right: -10px;
+@media (min-width: 768px) {
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .one-sixth      { float:left; padding: 0 10px; width: 16.666666%; }
+  .one-quarter    { float:left; padding: 0 10px; width: 25%; }
+  .one-third      { float:left; padding: 0 10px; width: 33.333333%;}
+  .one-half       { float:left; padding: 0 10px; width: 50%; }
+  .two-thirds     { float:left; padding: 0 10px; width: 66.666666%; }
+  .three-quarters { float:left; padding: 0 10px; width: 75%; }
+  .one-whole      { float:left; padding: 0 10px; width: 100%; }
+
+  .offset-one-sixth      { margin-left: 16.666666%; }
+  .offset-one-quarter    { margin-left: 25%; }
+  .offset-one-third      { margin-left: 33.333333%; }
+  .offset-one-half       { margin-left: 50%; }
+  .offset-two-thirds     { margin-left: 66.666666%; }
+  .offset-three-quarters { margin-left: 75%; }
 }
-
-.one-sixth      { float:left; padding: 0 10px; width: 16.666666%; }
-.one-quarter    { float:left; padding: 0 10px; width: 25%; }
-.one-third      { float:left; padding: 0 10px; width: 33.333333%;}
-.one-half       { float:left; padding: 0 10px; width: 50%; }
-.two-thirds     { float:left; padding: 0 10px; width: 66.666666%; }
-.three-quarters { float:left; padding: 0 10px; width: 75%; }
-.one-whole      { float:left; padding: 0 10px; width: 100%; }
-
-.offset-one-sixth      { margin-left: 16.666666%; }
-.offset-one-quarter    { margin-left: 25%; }
-.offset-one-third      { margin-left: 33.333333%; }
-.offset-one-half       { margin-left: 50%; }
-.offset-two-thirds     { margin-left: 66.666666%; }
-.offset-three-quarters { margin-left: 75%; }
-
 /*************************/
 
 html, body {
@@ -55,7 +60,12 @@ body {
   border: 1px solid gray;
   padding: 20px;
   margin-bottom: 100px;
-  margin-top: 70px;
+}
+
+@media (min-width: 768px) {
+  #wrapper {
+    margin-top: 70px;
+  }
 }
 
 a {
@@ -80,7 +90,7 @@ ul.grid,
 }
 
 .home ul.grid {
-  width: 780px;
+  max-width: 780px;
   margin: 0 auto;
 }
 
@@ -93,29 +103,45 @@ ul.grid li {
 }
 
 #site-nav {
-  margin-bottom: 10px;
-  /**/
-  background: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
   width: 100%;
-  position: fixed;
-  top:0;
-  right:0;
-  left:0;
+  background: white;
 }
 
-#site-nav ul li {
-  display: inline-block;
-  width: 127.5px;
-}
-
-#site-nav ul li a {
-  padding: 20px 10px;
+#site-nav a {
   display: block;
+  padding: .5em 1em;
 }
 
-#site-nav ul li a:hover {
-  background: rgba(255,0,0,1);
-  color: white;
+@media(min-width:768px) {
+  #site-nav {
+    /**/
+    background: white;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    margin-top: 0;
+    z-index: 99999;
+  }
+
+  #site-nav ul {  background: white; }
+
+  #site-nav ul li {
+    display: inline-block;
+    width: 127.5px;
+  }
+
+  #site-nav ul li a {
+    padding: 20px 10px;
+    display: block;
+  }
+
+  #site-nav ul li a:hover {
+    background: rgba(255,0,0,1);
+    color: white;
+  }
 }
 
 /***** Active sitenav stuff *****/
