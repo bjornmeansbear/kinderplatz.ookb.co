@@ -18,6 +18,13 @@
   position: relative;
 }
 
+/** reusable modules **/
+.bt1           { border-top: 1px solid currentColor; }
+
+.bb1           { border-bottom: 1px solid currentColor; }
+/** /end reusable modules **/
+
+
 .clearfix:after,
 .row:after,
 .group:after,
@@ -33,8 +40,21 @@ img {
   height: auto;
 }
 
+.container {
+  margin-lefT: .75rem;
+  margin-right: .75rem;
+}
+
 @media (min-width: 768px) {
-  .row {
+  #wrapper,
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .row,
+  .group,
+  .grouped {
     margin-left: -.75rem;
     margin-right: -.75rem;
   }
@@ -66,12 +86,6 @@ html, body {
 
 body {
   padding-bottom: 100px;
-}
-
-#wrapper,
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
 }
 
 #wrapper {
