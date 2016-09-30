@@ -73,11 +73,15 @@
 .p1 { padding: 1rem; }
 .p2 { padding: 2rem; }
 
+.pt1 { padding-top: 1rem; }
+
 .py2 { padding-top: 2rem; padding-bottom: 2rem; }
 
 .zneg1   { z-index: -1; }
 .z0      { z-index:  0; }
 .z1      { z-index:  1; }
+
+.bt1 { border-top: 1px solid currentColor; }
 
 .clearfix::after {
   content: '';
@@ -92,6 +96,30 @@
 .relative { position: relative; }
 .absolute { position: absolute; }
 .fixed    { position: fixed;    }
+
+@media (min-width: 50rem) {
+  .group {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    &::after {
+      content: '';
+      clear: both;
+      display:table;
+    }
+  }
+
+  .column,
+  .columns {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float:left;
+  }
+
+  .half { width: 50%; }
+
+}
+
+/**************/
 
 * {
   -webkit-box-sizing: inherit;
