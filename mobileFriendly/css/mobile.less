@@ -77,11 +77,19 @@
 
 .py2 { padding-top: 2rem; padding-bottom: 2rem; }
 
+.zn1,
 .zneg1   { z-index: -1; }
 .z0      { z-index:  0; }
 .z1      { z-index:  1; }
 
 .bt1 { border-top: 1px solid currentColor; }
+
+.twoCol {
+  columns: 2;
+}
+
+.block        { display: block; }
+.inline-block { display: inline-block; }
 
 .clearfix::after {
   content: '';
@@ -191,35 +199,37 @@ nav .mainMenu {
   border-top: .25em solid;
   border-color: @brown;
 }
-nav li a {
-  color: @brown;
-  display:block;
-  padding:.5em 1em;
-  text-decoration:none;
-  width: 100%;
-  font-weight: bold;
-  position: relative;
-  z-index: 1;
-  .transition(all 300ms);
-  &:hover {
-    padding-left: 2em;
-    background-color: rgba(096,103,103,.15);;
+header {
+  nav li a {
+    color: @brown;
+    display:block;
+    padding:.5em 1em;
+    text-decoration:none;
+    width: 100%;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    .transition(all 300ms);
+    &:hover {
+      padding-left: 2em;
+      background-color: rgba(096,103,103,.15);;
+    }
+    &:active {
+      .button-active;
+    }
   }
-  &:active {
-    .button-active;
+  nav li.active a {
+    opacity: .05;
+    &:hover {
+      padding-left: 1em;
+      background-color: initial;
+    }
   }
-}
-nav li.active a {
-  opacity: .05;
-  &:hover {
-    padding-left: 1em;
-    background-color: initial;
+  nav .mainMenu > li {
+    border-bottom: .25em solid;
+    border-color: @brown;
+    position:relative;
   }
-}
-nav .mainMenu > li {
-  border-bottom: .25em solid;
-  border-color: @brown;
-  position:relative;
 }
 .stripe {
   display: block;
@@ -227,16 +237,18 @@ nav .mainMenu > li {
   border-bottom: .75rem solid;
   border-color: currentColor;
 }
-nav li .stripe {
-  width: 40%;
-  top: 60%;
+  header {
+  nav li .stripe {
+    width: 40%;
+    top: 60%;
+  }
+  nav li:nth-child(1) .stripe { left:12em; }
+  nav li:nth-child(2) .stripe { left: 2em; }
+  nav li:nth-child(3) .stripe { left: 6em; }
+  nav li:nth-child(4) .stripe { left: 0; }
+  nav li:nth-child(5) .stripe { left: 8em; }
+  nav li:nth-child(6) .stripe { left: 4em; }
 }
-nav li:nth-child(1) .stripe { left:12em; }
-nav li:nth-child(2) .stripe { left: 2em; }
-nav li:nth-child(3) .stripe { left: 6em; }
-nav li:nth-child(4) .stripe { left: 0; }
-nav li:nth-child(5) .stripe { left: 8em; }
-nav li:nth-child(6) .stripe { left: 4em; }
 h1 .stripe {
   width: 80%;
   top:55%;
@@ -262,18 +274,18 @@ main {
 }
 
 footer {
-  font-size: 80%;
   position: relative;
 
   section {
     position: relative;
     .z1;
+    .p1;
   }
 
   &::before {
     content: '';
     display: block;
-    height: 133%;
+    height: 75%;
     width: 33%;
     border: .25rem solid @brown;
     position: absolute;
@@ -308,25 +320,14 @@ footer {
     }
   }
   footer {
+    font-size: .9rem;
+    
+    &::before {
+      height: 133%;
+    }
     section {
       width: 25%;
       float:left;
-      .p1;
-
-      &:nth-of-type(3)::before {
-        content: '';
-        display: block;
-        position: fixed;
-        height: 150%;
-        width: 150%;
-        border: .25rem solid @yellow;
-        border-bottom: none;
-        position: absolute;
-        top: 50%;
-        left: -5%;
-        .zneg1;
-        .opacity(50);
-      }
     }
   }
 }
