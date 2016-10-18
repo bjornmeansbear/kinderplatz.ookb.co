@@ -58,6 +58,11 @@
 .fs2 { font-size: 2em; }
 .fs3 { font-size: 3em; }
 
+.bold { font-weight: 700; }
+
+.lead { font-size: 1.25em; }
+.small,small { font-size: .8em; }
+
 .allcaps, .all-caps, .uppercase { text-transform: uppercase; }
 
 .m0 { margin: 0; }
@@ -83,6 +88,7 @@
 .ml1 { margin-left: 1rem; }
 .ml2 { margin-left: 2rem; }
 .ml3 { margin-left: 3rem; }
+.ml4 { margin-left: 4rem; }
 
 .p0 { padding: 0; }
 .p1 { padding: 1rem; }
@@ -98,8 +104,19 @@
 .z1      { z-index:  1; }
 
 .bt1 { border-top: 1px solid currentColor; }
+.bt2 { border-top: 2px solid currentColor; }
+.bt3 { border-top: 3px solid currentColor; }
+.bt4 { border-top: 4px solid currentColor; }
+
+.bb1   { border-bottom: 1px solid currentColor; }
+.bb2   { border-bottom: 2px solid currentColor; }
+.bb3   { border-bottom: 3px solid currentColor; }
+.bb4   { border-bottom: 4px solid currentColor; }
+.bb1em { border-bottom: 1em solid currentColor; }
 
 .twoCol {
+  -webkit-columns: 2;
+  -moz-columns: 2;
   columns: 2;
 }
 
@@ -318,7 +335,8 @@ footer {
     font-size: 90%;
   }
   main {
-    margin-left: 25rem;
+    margin-left: 22rem;
+    margin-right: 2rem;
 
     article {
       max-width: 37.5rem;
@@ -360,7 +378,7 @@ footer {
   margin-top: 2rem;
 }
 .decoration .outline {
-  border-width: 1rem;
+  border-width: .25rem;
   border-style: solid;
 }
 .decoration {
@@ -372,7 +390,7 @@ footer {
 @media (min-width: 1300px) {
   .decoration {
     right: initial;
-    left: 60rem;
+    left: 58rem;
   }
 }
 
@@ -380,9 +398,6 @@ footer {
   .blocks {
     height: 10rem;
     width: 10rem;
-  }
-  .decoration .outline {
-    border-width: .5rem;
   }
   .decoration {
     top: 36rem;
