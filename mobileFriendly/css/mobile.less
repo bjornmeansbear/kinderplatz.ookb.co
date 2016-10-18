@@ -321,13 +321,79 @@ footer {
   }
   footer {
     font-size: .9rem;
-    
+
     &::before {
       height: 133%;
     }
     section {
       width: 25%;
       float:left;
+    }
+  }
+}
+
+.blocks {
+  display: block;
+  height: 20rem;
+  width: 20rem;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+.blocks + .blocks {
+  margin-top: 2rem;
+}
+.decoration .outline {
+  border-width: 1rem;
+  border-style: solid;
+}
+.decoration {
+  top: 2rem;
+  right: 2rem;
+  opacity: .25;
+}
+
+@media (min-width: 1300px) {
+  .decoration {
+    right: initial;
+    left: 60rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  .blocks {
+    height: 10rem;
+    width: 10rem;
+  }
+  .decoration .outline {
+    border-width: .5rem;
+  }
+  .decoration {
+    top: 36rem;
+    right: -5rem;
+    opacity: .25;
+  }
+}
+
+.zebra {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: @blue;
+
+  tbody {
+    tr:first-child {
+      td {
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-color: @blue;
+      }
+    }
+    tr:nth-child(odd) {
+      background-color: lighten(@blue,22%);
+    }
+    tr:nth-child(even) {
+      background-color: lighten(@brown,77%);
     }
   }
 }
