@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul ul {
+    padding-left: 3em;
+}
+
+li a {
+    border-bottom: 1px solid lightskyblue;
+    border-left: 1px solid lightskyblue;
+    color: black;
+    display: block;
+    padding: .2em;
+}
+
+li li a {
+    color: gray;
+}
+
+li li li a {
+    color: darkslategray;
+}
+
+li li li li a {
+    color: darkblue;
+}
+
+li li li li li a {
+    color: darkolivegreen;
+}
