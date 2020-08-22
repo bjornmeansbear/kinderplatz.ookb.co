@@ -221,7 +221,7 @@ nav ul li a {
   width: 100%;
 }
 
-.logo > svg {
+.logo svg {
     min-width: 200px;
     max-width: 50%;
     height: auto;
@@ -269,3 +269,28 @@ nav ul li a {
   }
 }
 
+/* footer stuff */
+footer {
+  border-top: 1px solid var(--kp-gray);
+  margin-top: 3rem;
+  padding: 3rem;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer .flex div {
+  flex: 1;
+  padding: 0 1rem;
+  width: 20%;
+}
+
+footer .flex div:nth-child(2) {
+  flex: 2;
+  width: 40%
+}
+
+footer section .accredation * {
+  flex: 1;
+}
