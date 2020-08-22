@@ -114,7 +114,26 @@
 .fill-black          { fill: var(--kp-black); }
 .fill-white          { fill: var(--kp-white); }
 
-[class*="-hover"], button { transition: all 400ms; }
+[class*="-hover"], 
+nav a, 
+button { 
+  transition: all 250ms; 
+}
+
+/** links? **/
+nav .pink:hover                { background-color: var(--kp-pink); color: var(--kp-white); }
+nav .brown:hover               { background-color: var(--kp-brown); color: var(--kp-white); }
+nav .gray:hover                { background-color: var(--kp-gray); color: var(--kp-white); }
+nav .darkgray:hover            { background-color: var(--kp-darkgray); color: var(--kp-white); }
+nav .lightgray:hover           { background-color: var(--kp-lightgray); color: var(--kp-white); }
+nav .red:hover                 { background-color: var(--kp-red); color: var(--kp-white); }
+nav .orange:hover              { background-color: var(--kp-orange); color: var(--kp-white); }
+nav .yellow:hover              { background-color: var(--kp-yellow); color: var(--kp-white); }
+nav .green:hover               { background-color: var(--kp-green); color: var(--kp-white); }
+nav .blue:hover                { background-color: var(--kp-blue); color: var(--kp-white); }
+nav .purple:hover              { background-color: var(--kp-purple); color: var(--kp-white); }
+nav .black:hover               { background-color: var(--kp-black); color: var(--kp-white); }
+nav .white:hover               { background-color: var(--kp-white); color: var(--kp-black); }
 
 /** General stuff **/
 html,
@@ -141,6 +160,9 @@ body {
 }
 
 /** main nav stuff **/
+nav {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 nav ul {
     width: 100%;
     list-style: none;
@@ -166,24 +188,28 @@ nav > ul > li {
 }
 
 nav ul li a {
-    display: block;
-    width: 100%;
-    padding: .5em .25em;
-    text-decoration:none;
+  display: block;
+  width: 100%;
+  padding: .5em .25em;
+  text-decoration:none;
 }
 
 .subMenu {
-    width: 100%;
-    border-bottom: 1px solid var(--kp-red);
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 9997;
-    transition: all 400ms;
-    display: none;
+  width: 100%;
+  border-bottom: 1px solid var(--kp-red);
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9997;
+  transition: all 250ms;
+  /**/
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
 }
 .sub:hover .subMenu {
-    display:flex;
+  opacity: 1;
+  visibility: visible;
 }
 /** /end main nav stuff **/
 
@@ -195,6 +221,12 @@ nav ul li a {
   width: 100%;
 }
 
+.logo > svg {
+    min-width: 200px;
+    max-width: 50%;
+    height: auto;
+}
+
 .blocks {
   width: 100%;
   flex-wrap: wrap;
@@ -203,8 +235,8 @@ nav ul li a {
 }
 
 .blocks .block {
-  width: calc(100vw / 2 - 30px);
-  height: calc(100vw / 2 - 30px);
+  width: calc((100vw - 20px) / 2);
+  height: calc((100vw - 20px) / 2);
   border: 10px solid white;
   align-items: center;
   justify-content: center;
@@ -218,22 +250,22 @@ nav ul li a {
 
 @media (min-width: 500px) {
   .blocks .block {
-    width: calc(100vw / 3 - 27px);
-    height: calc(100vw / 3 - 27px);
+    width: calc((100vw - 20px) / 3);
+    height: calc((100vw - 20px) / 3);
   }
 }
 
 @media (min-width: 800px) {
   .blocks .block {
-    width: calc(100vw / 4 - 25px);
-    height: calc(100vw / 4 - 25px);
+    width: calc((100vw - 20px) / 4);
+    height: calc((100vw - 20px) / 4);
   }
 }
 
 @media (min-width: 1200px) {
   .blocks .block {
-    width: calc(100vw / 6 - 24px);
-    height: calc(100vw / 6 - 24px);
+    width: calc((100vw - 20px) / 6);
+    height: calc((100vw - 20px) / 6);
   }
 }
 
