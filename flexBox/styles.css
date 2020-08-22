@@ -120,14 +120,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  box-model: border-box;
+  box-sizing: border-box;
   min-height: 100%;
 }
 
 *,
 *::before,
 *::after {
-  box-model: inherit;
+  box-sizing: inherit;
 }
 
 .flex {
