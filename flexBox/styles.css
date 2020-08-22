@@ -10,6 +10,7 @@
   --kp-green:     rgba(140,165,115,1);
   --kp-blue:      rgba(157,178,176,1);
   --kp-purple:    rgba(174,139,164,1);
+  --kp-darkpurple:#77155f;
   --kp-black:     rgba(000,000,000,1);
   --kp-white:     rgba(255,255,255,1);
 }
@@ -55,6 +56,7 @@
 .green                 { color: var(--kp-green); }
 .blue                  { color: var(--kp-blue); }
 .purple                { color: var(--kp-purple); }
+.darkpurple            { color: var(--kp-darkpurple); }
 .black                 { color: var(--kp-black); }
 .white                 { color: var(--kp-white); }
 
@@ -133,7 +135,7 @@ nav .green:hover               { background-color: var(--kp-green); color: var(-
 nav .blue:hover                { background-color: var(--kp-blue); color: var(--kp-white); }
 nav .purple:hover              { background-color: var(--kp-purple); color: var(--kp-white); }
 nav .black:hover               { background-color: var(--kp-black); color: var(--kp-white); }
-nav .white:hover               { background-color: var(--kp-white); color: var(--kp-black); }
+/* nav .white:hover               { background-color: var(--kp-white); color: var(--kp-black); } */
 
 /** General stuff **/
 html,
@@ -190,8 +192,10 @@ body {
 }
 
 /** main nav stuff **/
-nav {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#mainMenu {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  z-index: 999;
 }
 #mainMenu ul {
     width: 100%;
@@ -212,6 +216,9 @@ nav {
 
 #mainMenu > ul > li {
     border-bottom: 1px solid var(--kp-red); 
+}
+#mainMenu > ul > li.active {
+  border-bottom: none; 
 }
 
 #mainMenu ul li a {
@@ -252,6 +259,8 @@ nav {
     min-width: 200px;
     max-width: 50%;
     height: auto;
+    z-index: 1;
+    position: relative;
 }
 
 .blocks {
@@ -296,6 +305,88 @@ nav {
   }
 }
 
+/* general page styling */
+main .logo.banner {
+  min-height: 150px;
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .logoCard {
+  min-width: 200px;
+  max-width: 30%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+  padding: 1em;
+  background-color: rgba(195,115,099,.8);
+}
+
+.banner .logoCard svg {
+  min-width: none;
+  width: 100%;
+  max-width: none;
+}
+
+.banner .logoCard svg g,
+.banner .logoCard svg path {
+  fill: var(--kp-white);
+}
+
+.banner h1 {
+  position: absolute;
+  font-size: 22vw;
+  font-style: italic;
+  letter-spacing: -.08em;
+  z-index: 0;
+  left: -1vw;
+}
+
+.banner .block {
+  width: 10vw;
+  height: 10vw;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+}
+
+.banner .block:nth-child(1) {
+  left: 75%;
+  top:1vw;
+}
+
+.banner .block:nth-child(2) {
+  left: calc(75% + 8vw);
+  top: 4vw;
+}
+
+.banner .block:nth-child(3) {
+  left: 7%;
+  top: 10vw;
+}
+
+
+.contents aside {
+  flex: 1;
+  background-color: var(--kp-white);
+  position: relative;
+  top: -3em;
+  padding: 2em;
+}
+
+.contents article {
+  flex: 2;
+  padding: 2em;
+  margin-right: 2em;
+  background-color: rgba(195,115,099,.1);
+}
+
+.contents article section {
+  max-width: 40em;
+}
+
 /* footer stuff */
 footer {
   border-top: 1px solid var(--kp-gray);
@@ -323,4 +414,13 @@ footer section .accredation svg {
   max-width: 3em;
   align-self: start;
   margin-right: 1em;
+}
+
+footer nav {
+  border-top: 1px solid;
+  padding-top: 2em;
+  width: 100%;
+}
+footer nav > ul > li {
+  flex: auto;
 }
