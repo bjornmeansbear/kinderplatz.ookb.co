@@ -116,6 +116,7 @@
 
 [class*="-hover"], button { transition: all 400ms; }
 
+/** General stuff **/
 html,
 body {
   padding: 0;
@@ -139,6 +140,7 @@ body {
   flex-wrap: wrap;
 }
 
+/** main nav stuff **/
 nav ul {
     width: 100%;
     list-style: none;
@@ -183,7 +185,9 @@ nav ul li a {
 .sub:hover .subMenu {
     display:flex;
 }
+/** /end main nav stuff **/
 
+/** logo, other general homepage-y things **/
 .logo {
   align-items: center;
   justify-content: center;
@@ -232,3 +236,4 @@ nav ul li a {
     height: calc(100vw / 6 - 24px);
   }
 }
+
