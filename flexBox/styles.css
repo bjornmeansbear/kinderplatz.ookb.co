@@ -5,14 +5,18 @@
   --kp-darkgray:  rgba(096,103,103,1);
   --kp-lighgray:  rgba(194,211,186,1);
   --kp-red:       rgba(183,080,081,1);
-  --kp-orange:    rgba(195,115,099,1);
-  --kp-yellow:    rgba(197,192,101,1);
+  --kp-orange:    rgba(183,120,099,1);
+  --kp-yellow:    rgba(183,172,099,1);
   --kp-green:     rgba(140,165,115,1);
-  --kp-blue:      rgba(157,178,176,1);
-  --kp-purple:    rgba(174,139,164,1);
-  --kp-darkpurple:#77155f;
+  --kp-blue:      rgba(140,155,165,1);
+  --kp-darkblue:  rgba(013,048,061,1);
+  --kp-purple:    rgba(174,115,155,1);
+  --kp-darkpurple:rgba(119,041,095,1);
   --kp-black:     rgba(000,000,000,1);
   --kp-white:     rgba(255,255,255,1);
+
+  --font-stack-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-stack-serif:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /********* color modules **********/
@@ -154,7 +158,7 @@ body {
 
 /* some good accessible typography */
 html {
-  font-family: Noto Serif,serif;
+  font-family: var(--font-stack-sans);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
@@ -192,31 +196,33 @@ body {
 }
 
 /** main nav stuff **/
+
+/** universal mainNav stuff **/
+/** starting with what happens on skinny screens/phones/Old stuff **/
 #mainMenu {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: relative;
   z-index: 999;
 }
-#mainMenu ul {
-    width: 100%;
-    position: relative;
-}
 
-#mainMenu > ul {
-    border-top: 1px solid var(--kp-red);
-    position:relative;
+#mainMenu ul {
+  width: 100%;
+  position: relative;
+  flex-direction: column; /* this will switch to row; column displays it as a simple list for skinny screens */
 }
 
 #mainMenu ul li {
-    width: auto;
-    display: block;
-    flex: 1;
-    text-align: center;
+  width: auto;
+  display: block;
+  flex: 1;
 }
 
-#mainMenu > ul > li {
-    border-bottom: 1px solid var(--kp-red); 
+#mainMenu > ul {
+  border-top: 1px solid var(--kp-red);
 }
+#mainMenu > ul > li {
+  border-bottom: 1px solid var(--kp-red); 
+}
+/** extra customization **/
 #mainMenu > ul > li.active {
   border-bottom: none; 
 }
@@ -224,7 +230,7 @@ body {
 #mainMenu ul li a {
   display: block;
   width: 100%;
-  padding: .5em .25em;
+  padding: .5em 1em;
   text-decoration:none;
 }
 
@@ -245,13 +251,47 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+/* medium widths? */
+@media (min-width: 800px) {
+  #mainMenu ul {
+    flex-direction: row; /* this will is row; but has a wrap so its 2 rows of 3! */
+    flex-wrap: wrap;
+  }
+  #mainMenu ul li {
+    width: calc(100% / 3);
+    text-align: center;
+    flex-basis: 30%;
+    border-right: 1px solid var(--kp-red);
+  }
+  #mainMenu ul li:nth-child(3n) {
+    border-right: none;
+  }
+  #mainMenu ul li a {
+    padding: .5em .3333em;
+  }  
+}
+/* wide widths! */
+@media (min-width: 1200px) {
+  #mainMenu ul {
+    flex-wrap: nowrap;
+  }
+  #mainMenu ul li {
+    width: auto;
+    border-right: none;
+    flex-basis: auto;
+  }
+  #mainMenu ul li a {
+    padding: .5em .25em;
+  }  
+}
 /** /end main nav stuff **/
 
 /** logo, other general homepage-y things **/
 .logo {
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 25vh;
   width: 100%;
 }
 
@@ -266,14 +306,14 @@ body {
 .blocks {
   width: 100%;
   flex-wrap: wrap;
-  border: 10px solid white;
+  border: 2px solid white;
   align-items: top;
 }
 
 .blocks .block {
-  width: calc((100vw - 20px) / 2);
-  height: calc((100vw - 20px) / 2);
-  border: 10px solid white;
+  width: calc((100vw - 4px) / 2);
+  height: calc((100vw - 4px) / 2);
+  border: 2px solid white;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -285,23 +325,32 @@ body {
 }
 
 @media (min-width: 500px) {
+  .logo {
+    height: 33vh;
+  }
   .blocks .block {
-    width: calc((100vw - 20px) / 3);
-    height: calc((100vw - 20px) / 3);
+    width: calc((100vw - 4px) / 3);
+    height: calc((100vw - 4px) / 3);
   }
 }
 
 @media (min-width: 800px) {
+  .logo {
+    height: 40vh;
+  }
   .blocks .block {
-    width: calc((100vw - 20px) / 4);
-    height: calc((100vw - 20px) / 4);
+    width: calc((100vw - 4px) / 4);
+    height: calc((100vw - 4px) / 4);
   }
 }
 
 @media (min-width: 1200px) {
+  .logo {
+    height: 45vh;
+  }
   .blocks .block {
-    width: calc((100vw - 20px) / 6);
-    height: calc((100vw - 20px) / 6);
+    width: calc((100vw - 4px) / 6);
+    height: calc((100vw - 4px) / 6);
   }
 }
 
@@ -338,6 +387,8 @@ main .logo.banner {
   position: absolute;
   font-size: 22vw;
   font-style: italic;
+  font-weight: 400;
+  font-family: var(--font-stack-serif);
   letter-spacing: -.08em;
   z-index: 0;
   left: -1vw;
@@ -367,7 +418,6 @@ main .logo.banner {
   top: 10vw;
 }
 
-
 .contents aside {
   flex: 1;
   background-color: var(--kp-white);
@@ -387,21 +437,18 @@ main .logo.banner {
   max-width: 40em;
 }
 
+.contents article section p {
+  font-family: var(--font-stack-serif);
+}
+
 /* footer stuff */
 footer {
   border-top: 1px solid var(--kp-gray);
-  margin-top: 3rem;
-  padding: 3rem;
-}
-
-footer > .flex {
-  max-width: 1300px;
-  margin: auto;
 }
 
 footer .flex div {
   flex: 1;
-  padding: 0 1rem;
+  padding: 3rem;
   align-self: start;
 }
 
@@ -418,9 +465,18 @@ footer section .accredation svg {
 
 footer nav {
   border-top: 1px solid;
-  padding-top: 2em;
   width: 100%;
+  /* text-align: center; */
 }
 footer nav > ul > li {
+  padding: 3rem;
   flex: auto;
+  /* flex: 1; */
+}
+/* footer nav > ul > li:nth-child(2),
+footer nav > ul > li:nth-child(3) {
+  flex: 2;
+} */
+footer nav a {
+  text-decoration: none;
 }
