@@ -446,16 +446,49 @@ main .logo.banner {
 /* footer stuff */
 footer {
   border-top: 1px solid var(--kp-gray);
+  font-size: 90%;
+}
+
+footer .flex {
+  flex-direction: column;
 }
 
 footer .flex div {
   flex: 1;
-  padding: 3rem;
-  align-self: start;
+  padding: 1.25rem;
 }
 
-footer .flex div:nth-child(2) {
-  flex: 2;
+footer section .accredation {
+  flex-direction: row;
+}
+
+@media (min-width: 900px) {
+  footer .flex {
+    flex-direction: row;
+  }  
+  footer .flex div {
+    padding: 1.5rem;
+    align-self: start;
+  }
+  footer .flex div:nth-child(2) {
+    flex: 2;
+  }  
+  footer section .accredation {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1300px) {
+  footer .flex {
+    flex-direction: row;
+  }  
+  footer .flex div {
+    padding: 2rem;
+    align-self: start;
+  }
+  footer section .accredation {
+    flex-direction: row;
+  }
 }
 
 footer section .accredation svg {
@@ -471,14 +504,10 @@ footer nav {
   /* text-align: center; */
 }
 footer nav > ul > li {
-  padding: 3rem;
+  padding: 2rem;
   flex: auto;
-  /* flex: 1; */
 }
-/* footer nav > ul > li:nth-child(2),
-footer nav > ul > li:nth-child(3) {
-  flex: 2;
-} */
+
 footer nav a {
   text-decoration: none;
 }
