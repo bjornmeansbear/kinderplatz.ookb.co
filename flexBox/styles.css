@@ -404,18 +404,18 @@ main .logo.banner {
 }
 
 .banner .block:nth-child(1) {
-  left: 75%;
+  left: 66%;
   top:1vw;
 }
 
 .banner .block:nth-child(2) {
-  left: calc(75% + 8vw);
-  top: 4vw;
+  left: calc(66% + 8vw);
+  top: 5vw;
 }
 
 .banner .block:nth-child(3) {
-  left: 7%;
-  top: 10vw;
+  left: calc(66% + 16vw);
+  top: 9vw;
 }
 
 .contents aside {
@@ -435,6 +435,8 @@ main .logo.banner {
 
 .contents article section {
   max-width: 40em;
+  font-size: 1.25rem;
+  line-height: 1.618;
 }
 
 .contents article section p {
@@ -479,4 +481,8 @@ footer nav > ul > li:nth-child(3) {
 } */
 footer nav a {
   text-decoration: none;
+}
+
+footer nav .sub .subMenu {
+  padding-left: 2rem;
 }
