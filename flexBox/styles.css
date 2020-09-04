@@ -195,6 +195,9 @@ body {
   padding: 0;
 }
 
+main {
+  margin-bottom: 4em;
+}
 /** main nav stuff **/
 
 /** universal mainNav stuff **/
@@ -356,7 +359,6 @@ body {
 }
 
 /** header stuff; some conflicts with above!? **/
-
 header,
 header .flex {
   align-items: center;
@@ -392,7 +394,6 @@ header .blockTych .block {
   overflow: hidden;
   height: 25vw;
 }
-
 
 /* general page styling */
 main .logo.banner {
@@ -468,11 +469,27 @@ main .logo.banner {
   background-color: rgba(195,115,099,.1);
 }
 
-@media (min-width: 900px) {
- main .contents {
-   flex-direction: row;
- }
-   .contents aside {
+@media (min-width: 800px) {
+  main .contents {
+    flex-direction: row;
+  }
+  .contents aside {
+    flex: 1;
+    top: -3em;
+    padding: 2em;
+  }
+  .contents article {
+    flex: 2;
+    padding: 2em;
+    margin-right: 0;
+  }  
+}
+
+@media (min-width: 1100px) {
+  main .contents {
+    flex-direction: row;
+  }
+  .contents aside {
     flex: 2;
     top: -3em;
     padding: 2em;
@@ -481,6 +498,22 @@ main .logo.banner {
     flex: 5;
     padding: 2em;
     margin-right: 2em;
+  }  
+}
+
+@media (min-width: 1400px) {
+  main .contents {
+    flex-direction: row;
+  }
+  .contents aside {
+    flex: 2;
+    top: -3em;
+    padding: 2em;
+  }
+  .contents article {
+    flex: 7;
+    padding: 2em;
+    margin-right: 4em;
   }  
 }
 
@@ -512,7 +545,6 @@ footer .flex div {
 footer section .accredation {
   flex-direction: row;
 }
-
 
 footer section .accredation svg {
   min-width: 1.5em;
