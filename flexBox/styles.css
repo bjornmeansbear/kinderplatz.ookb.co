@@ -200,6 +200,13 @@ main {
 }
 /** main nav stuff **/
 
+.bottomStripe {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-bottom: 1.5em solid;
+}
+
 /** universal mainNav stuff **/
 /** starting with what happens on skinny screens/phones/Old stuff **/
 #mainMenu {
@@ -373,11 +380,12 @@ header .logoCard {
   padding: 2em 4em;
   flex: 1;
   width: calc(100% / 3 * 1);
-}
-header .logoCard,
-header .logoCard svg {
-  width: auto;
   max-width: 700px;
+}
+header .logoCard svg {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
 }
 
 header .blockTych {
@@ -411,6 +419,8 @@ main .logo.banner {
   position: relative;
   padding: 1em;
   background-color: rgba(195,115,099,.8);
+  overflow: hidden;
+  word-break: break-all;
 }
 
 .banner .logoCard svg {
