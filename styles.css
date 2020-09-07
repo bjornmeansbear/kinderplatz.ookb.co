@@ -373,7 +373,8 @@ main .logo.banner {
 }
 
 /* shoot, have to do an individual class for each "section" */
-.intro .banner .logoCard { background-color: rgba(195,115,099,.8); }
+.intro    .banner .logoCard { background-color: rgba(195,115,099,.80); }
+.approach .banner .logoCard { background-color: rgba(183,172,099,.85); }
 
 .banner .logoCard svg {
   min-width: none;
@@ -388,14 +389,16 @@ main .logo.banner {
 
 .banner h1 {
   position: absolute;
-  font-size: 22vw;
+  font-size: 18vw;
   font-style: italic;
   font-weight: 400;
   font-family: var(--font-stack-serif);
   letter-spacing: -.08em;
   z-index: 0;
-  left: -1vw;
+  left: -2vw;
   white-space: nowrap;
+  text-transform: uppercase;
+  transform: rotate(0.02turn);
 }
 
 .banner .block {
