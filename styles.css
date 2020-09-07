@@ -198,7 +198,6 @@ body {
 main {
   margin-bottom: 4em;
 }
-/** main nav stuff **/
 
 .bottomStripe {
   padding: 0;
@@ -207,6 +206,7 @@ main {
   border-bottom: 1.5em solid;
 }
 
+/** main nav stuff **/
 /** universal mainNav stuff **/
 /** starting with what happens on skinny screens/phones/Old stuff **/
 #mainMenu {
@@ -373,8 +373,21 @@ main .logo.banner {
 }
 
 /* shoot, have to do an individual class for each "section" */
-.intro    .banner .logoCard { background-color: rgba(195,115,099,.80); }
-.approach .banner .logoCard { background-color: rgba(183,172,099,.85); }
+.intro       .banner .logoCard { background-color: rgba(195,115,099,.80); }
+.approach    .banner .logoCard { background-color: rgba(183,172,099,.85); }
+.ageGroup    .banner .logoCard { background-color: rgba(140,165,115,.80); }
+.tuition     .banner .logoCard { background-color: rgba(140,155,165,.80); }
+.credentials .banner .logoCard { background-color: rgba(174,115,155,.80); }
+.contact     .banner .logoCard { background-color: rgba(183,080,081,.80); }
+
+/* shoot, have to do an individual class for each main text area too! */
+.intro       article { background-color: rgba(195,115,099,.15); }
+.approach    article { background-color: rgba(183,172,099,.20); }
+.ageGroup    article { background-color: rgba(140,165,115,.15); }
+.tuition     article { background-color: rgba(140,155,165,.15); }
+.credentials article { background-color: rgba(174,115,155,.15); }
+.contact     article { background-color: rgba(183,080,081,.15); }
+
 
 .banner .logoCard svg {
   min-width: none;
@@ -432,7 +445,6 @@ main .logo.banner {
 }
 .contents article {
   padding: 1rem 1rem 3rem 1rem;
-  background-color: rgba(195,115,099,.1);
 }
 
 @media (min-width: 800px) {
