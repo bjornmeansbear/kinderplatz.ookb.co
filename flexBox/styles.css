@@ -308,6 +308,7 @@ main {
 
 .logo svg {
     min-width: 200px;
+    width: 50%;
     max-width: 50%;
     height: auto;
     z-index: 1;
