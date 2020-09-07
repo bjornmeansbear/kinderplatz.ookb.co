@@ -444,6 +444,7 @@ main .logo.banner {
   letter-spacing: -.08em;
   z-index: 0;
   left: -1vw;
+  white-space: nowrap;
 }
 
 .banner .block {
