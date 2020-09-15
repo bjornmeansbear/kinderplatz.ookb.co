@@ -612,3 +612,103 @@ footer nav .sub .subMenu {
     padding-left: 2rem;
   }
 }
+
+/** Responsive Table Styling!? */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+tr {
+  border-bottom: 1px solid black;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.33em 0.5em;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+thead tr:first-child {
+  background-color: white;
+}
+
+.subnote {
+  font-size: 75%;
+  display: block;
+}
+
+td::before {
+  display: none;
+}
+/* Skinny Screen Solution ?? */
+
+@media screen and (max-width: 680px) {
+  /* reset/undo */
+  tr:nth-child(odd)    { background-color: transparent; }
+  tr:nth-child(even)   { background-color: transparent; }
+  thead tr:first-child { background-color: transparent; }
+  
+  table {
+    border: 0;
+    display: block;
+    box-shadow: none;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    border-top: 2px solid;
+    display: block;
+  }
+
+  td {
+    border-bottom: 1px solid #3c3c3b;
+    display: flex;
+  }
+  
+  td:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  td:nth-child(even) {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  td:first-child {
+    background-color: transparent;
+    padding-top: .75em;
+    font-weight: bold;
+    flex-wrap: wrap;
+  }
+  
+  td::before {
+    display: inline-block;
+    margin-right: auto;
+    padding-right: 1em;
+  }
+  
+  .subnote {
+    display: block;
+    align-self: flex-end;
+    width: 100%;
+    text-align: right;
+  }
+}
