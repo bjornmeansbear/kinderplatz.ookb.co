@@ -1,0 +1,614 @@
+:root {
+  --kp-pink:      rgba(236,064,121,1);
+  --kp-brown:     rgba(047,041,038,1);
+  --kp-gray:      rgba(132,132,120,1);
+  --kp-darkgray:  rgba(096,103,103,1);
+  --kp-lighgray:  rgba(194,211,186,1);
+  --kp-red:       rgba(183,080,081,1);
+  --kp-orange:    rgba(183,120,099,1);
+  --kp-yellow:    rgba(183,172,099,1);
+  --kp-green:     rgba(140,165,115,1);
+  --kp-blue:      rgba(140,155,165,1);
+  --kp-darkblue:  rgba(013,048,061,1);
+  --kp-purple:    rgba(174,115,155,1);
+  --kp-darkpurple:rgba(119,041,095,1);
+  --kp-black:     rgba(000,000,000,1);
+  --kp-white:     rgba(255,255,255,1);
+
+  --font-stack-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-stack-serif:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/********* color modules **********/
+.bg-trans              { background-color: transparent; }
+.bg-pink               { background-color: var(--kp-pink); }
+.bg-brown              { background-color: var(--kp-brown); }
+.bg-gray               { background-color: var(--kp-gray); }
+.bg-darkgray           { background-color: var(--kp-darkgray); }
+.bg-lightgray          { background-color: var(--kp-lightgray); }
+.bg-red                { background-color: var(--kp-red); }
+.bg-orange             { background-color: var(--kp-orange); }
+.bg-yellow             { background-color: var(--kp-yellow); }
+.bg-green              { background-color: var(--kp-green); }
+.bg-blue               { background-color: var(--kp-blue); }
+.bg-purple             { background-color: var(--kp-purple); }
+.bg-black              { background-color: var(--kp-black); }
+.bg-white              { background-color: var(--kp-white); }
+
+.bg-pink-hover:hover        { background-color: var(--kp-pink); }
+.bg-brown-hover:hover       { background-color: var(--kp-brown); }
+.bg-gray-hover:hover        { background-color: var(--kp-gray); }
+.bg-darkgray-hover:hover    { background-color: var(--kp-darkgray); }
+.bg-lightgray-hover:hover   { background-color: var(--kp-lightgray); }
+.bg-red-hover:hover         { background-color: var(--kp-red); }
+.bg-orange-hover:hover      { background-color: var(--kp-orange); }
+.bg-yellow-hover:hover      { background-color: var(--kp-yellow); }
+.bg-green-hover:hover       { background-color: var(--kp-green); }
+.bg-blue-hover:hover        { background-color: var(--kp-blue); }
+.bg-purple-hover:hover      { background-color: var(--kp-purple); }
+.bg-black-hover:hover       { background-color: var(--kp-black); }
+.bg-white-hover:hover       { background-color: var(--kp-white); }
+
+.pink                  { color: var(--kp-pink); }
+.brown                 { color: var(--kp-brown); }
+.gray                  { color: var(--kp-gray); }
+.darkgray              { color: var(--kp-darkgray); }
+.lightgray             { color: var(--kp-lightgray); }
+.red                   { color: var(--kp-red); }
+.orange                { color: var(--kp-orange); }
+.yellow                { color: var(--kp-yellow); }
+.green                 { color: var(--kp-green); }
+.blue                  { color: var(--kp-blue); }
+.purple                { color: var(--kp-purple); }
+.darkpurple            { color: var(--kp-darkpurple); }
+.black                 { color: var(--kp-black); }
+.white                 { color: var(--kp-white); }
+
+.pink-hover:hover                  { color: var(--kp-pink); }
+.brown-hover:hover                 { color: var(--kp-brown); }
+.gray-hover:hover                  { color: var(--kp-gray); }
+.darkgray-hover:hover              { color: var(--kp-darkgray); }
+.lightgray-hover:hover             { color: var(--kp-lightgray); }
+.red-hover:hover                   { color: var(--kp-red); }
+.orange-hover:hover                { color: var(--kp-orange); }
+.yellow-hover:hover                { color: var(--kp-yellow); }
+.green-hover:hover                 { color: var(--kp-green); }
+.blue-hover:hover                  { color: var(--kp-blue); }
+.purple-hover:hover                { color: var(--kp-purple); }
+.black-hover:hover                 { color: var(--kp-black); }
+.white-hover:hover                 { color: var(--kp-white); }
+
+.border-pink           { border-color: var(--kp-pink); }
+.border-brown          { border-color: var(--kp-brown); }
+.border-gray           { border-color: var(--kp-gray); }
+.border-darkgray       { border-color: var(--kp-darkgray); }
+.border-lightgray      { border-color: var(--kp-lightgray); }
+.border-red            { border-color: var(--kp-red); }
+.border-orange         { border-color: var(--kp-orange); }
+.border-yellow         { border-color: var(--kp-yellow); }
+.border-green          { border-color: var(--kp-green); }
+.border-blue           { border-color: var(--kp-blue); }
+.border-purple         { border-color: var(--kp-purple); }
+.border-black          { border-color: var(--kp-black); }
+.border-white          { border-color: var(--kp-white); }
+
+.border-pink-hover:hover           { border-color: var(--kp-pink); }
+.border-brown-hover:hover          { border-color: var(--kp-brown); }
+.border-gray-hover:hover           { border-color: var(--kp-gray); }
+.border-darkgray-hover:hover       { border-color: var(--kp-darkgray); }
+.border-lightgray-hover:hover      { border-color: var(--kp-lightgray); }
+.border-red-hover:hover            { border-color: var(--kp-red); }
+.border-orange-hover:hover         { border-color: var(--kp-orange); }
+.border-yellow-hover:hover         { border-color: var(--kp-yellow); }
+.border-green-hover:hover          { border-color: var(--kp-green); }
+.border-blue-hover:hover           { border-color: var(--kp-blue); }
+.border-purple-hover:hover         { border-color: var(--kp-purple); }
+.border-black-hover:hover          { border-color: var(--kp-black); }
+.border-white-hover:hover          { border-color: var(--kp-white); }
+
+.fill-pink           { fill: var(--kp-pink); }
+.fill-brown          { fill: var(--kp-brown); }
+.fill-gray           { fill: var(--kp-gray); }
+.fill-darkgray       { fill: var(--kp-darkgray); }
+.fill-lightgray      { fill: var(--kp-lightgray); }
+.fill-red            { fill: var(--kp-red); }
+.fill-orange         { fill: var(--kp-orange); }
+.fill-yellow         { fill: var(--kp-yellow); }
+.fill-green          { fill: var(--kp-green); }
+.fill-blue           { fill: var(--kp-blue); }
+.fill-purple         { fill: var(--kp-purple); }
+.fill-black          { fill: var(--kp-black); }
+.fill-white          { fill: var(--kp-white); }
+
+[class*="-hover"], 
+nav a, 
+button { 
+  transition: all 250ms; 
+}
+
+/** links? **/
+nav .pink:hover                { background-color: var(--kp-pink); color: var(--kp-white); }
+nav .brown:hover               { background-color: var(--kp-brown); color: var(--kp-white); }
+nav .gray:hover                { background-color: var(--kp-gray); color: var(--kp-white); }
+nav .darkgray:hover            { background-color: var(--kp-darkgray); color: var(--kp-white); }
+nav .lightgray:hover           { background-color: var(--kp-lightgray); color: var(--kp-white); }
+nav .red:hover                 { background-color: var(--kp-red); color: var(--kp-white); }
+nav .orange:hover              { background-color: var(--kp-orange); color: var(--kp-white); }
+nav .yellow:hover              { background-color: var(--kp-yellow); color: var(--kp-white); }
+nav .green:hover               { background-color: var(--kp-green); color: var(--kp-white); }
+nav .blue:hover                { background-color: var(--kp-blue); color: var(--kp-white); }
+nav .purple:hover              { background-color: var(--kp-purple); color: var(--kp-white); }
+nav .black:hover               { background-color: var(--kp-black); color: var(--kp-white); }
+/* nav .white:hover               { background-color: var(--kp-white); color: var(--kp-black); } */
+
+/** General stuff **/
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* some good accessible typography */
+html {
+  font-family: var(--font-stack-sans);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-y: scroll;
+  text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  -ms-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+}
+
+body {
+  font-size: 1em;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid.wrapper {
+  /*   min-height: 100vh; */
+  flex-wrap: wrap;
+}
+
+.list-reset {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+main {
+  margin-bottom: 4em;
+}
+
+.bottomStripe {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-bottom: 1.5em solid;
+}
+
+/** main nav stuff **/
+/** universal mainNav stuff **/
+/** starting with what happens on skinny screens/phones/Old stuff **/
+#mainMenu {
+  position: relative;
+  z-index: 999;
+}
+
+#mainMenu ul {
+  width: 100%;
+  position: relative;
+  flex-direction: column; /* this will switch to row; column displays it as a simple list for skinny screens */
+}
+
+#mainMenu ul li {
+  /* width: auto; */
+  width: 100%;
+  display: block;
+  flex: 1;
+}
+
+#mainMenu > ul {
+  border-top: 1px solid var(--kp-red);
+}
+#mainMenu > ul > li {
+  border-bottom: 1px solid var(--kp-red); 
+}
+
+/** extra customization **/
+#mainMenu > ul > li.active {
+  border-bottom: none; 
+}
+
+#mainMenu ul li a {
+  display: block;
+  width: 100%;
+  padding: .5em 1em;
+  text-decoration:none;
+}
+
+/* medium widths? */
+@media (min-width: 800px) {
+  #mainMenu ul {
+    flex-direction: row; /* this will is row; but has a wrap so its 2 rows of 3! */
+    flex-wrap: wrap;
+  }
+  #mainMenu ul li {
+    width: calc(100% / 3);
+    text-align: center;
+    flex-basis: 30%;
+    border-right: 1px solid var(--kp-red);
+  }
+  #mainMenu ul li:nth-child(3n) {
+    border-right: none;
+  }
+  #mainMenu ul li a {
+    padding: .5em .3333em;
+  }  
+}
+/* wide widths! */
+@media (min-width: 1200px) {
+  #mainMenu ul {
+    flex-wrap: nowrap;
+  }
+  #mainMenu ul li {
+    width: auto;
+    border-right: none;
+    flex-basis: auto;
+  }
+  #mainMenu ul li a {
+    padding: .5em .25em;
+  }  
+}
+/** /end main nav stuff **/
+
+/** logo, other general homepage-y things **/
+.logo {
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  width: 100%;
+}
+
+.logo svg {
+    min-width: 200px;
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+}
+
+.blocks {
+  width: 100%;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  align-items: top;
+}
+
+.blocks .block {
+  width: calc((100vw - 4px) / 2);
+  height: calc((100vw - 4px) / 2);
+  border: 2px solid white;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.block img {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 500px) {
+  .logo {
+    height: 33vh;
+  }
+  .blocks .block {
+    width: calc((100vw - 4px) / 3);
+    height: calc((100vw - 4px) / 3);
+  }
+}
+
+@media (min-width: 800px) {
+  .logo {
+    height: 40vh;
+  }
+  .blocks .block {
+    width: calc((100vw - 4px) / 4);
+    height: calc((100vw - 4px) / 4);
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    height: 45vh;
+  }
+  .blocks .block {
+    width: calc((100vw - 4px) / 6);
+    height: calc((100vw - 4px) / 6);
+  }
+}
+
+/** header stuff; some conflicts with above!? **/
+header,
+header .flex {
+  align-items: center;
+}
+
+/* general page styling */
+main .logo.banner {
+  min-height: 150px;
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .logoCard {
+  min-width: 200px;
+  max-width: 30%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+  padding: 1em;
+}
+
+/* shoot, have to do an individual class for each "section" */
+.intro       .banner .logoCard { background-color: rgba(195,115,099,.80); }
+.approach    .banner .logoCard { background-color: rgba(183,172,099,.85); }
+.ageGroup    .banner .logoCard { background-color: rgba(140,165,115,.80); }
+.tuition     .banner .logoCard { background-color: rgba(140,155,165,.80); }
+.credentials .banner .logoCard { background-color: rgba(174,115,155,.80); }
+.contact     .banner .logoCard { background-color: rgba(183,080,081,.80); }
+
+/* shoot, have to do an individual class for each main text area too! */
+.intro       article { background-color: rgba(195,115,099,.15); }
+.approach    article { background-color: rgba(183,172,099,.20); }
+.ageGroup    article { background-color: rgba(140,165,115,.15); }
+.tuition     article { background-color: rgba(140,155,165,.15); }
+.credentials article { background-color: rgba(174,115,155,.15); }
+.contact     article { background-color: rgba(183,080,081,.15); }
+
+
+.banner .logoCard svg {
+  min-width: none;
+  width: 100%;
+  max-width: none;
+}
+
+.banner .logoCard svg g,
+.banner .logoCard svg path {
+  fill: var(--kp-white);
+}
+
+.banner h1 {
+  position: absolute;
+  font-size: 18vw;
+  font-style: italic;
+  font-weight: 400;
+  font-family: var(--font-stack-serif);
+  letter-spacing: -.08em;
+  z-index: 0;
+  left: -2vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transform: rotate(0.02turn);
+}
+
+.banner .block {
+  width: 10vw;
+  height: 10vw;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+}
+.banner .block:nth-child(1) {
+  left: 66%;
+  top:1vw;
+}
+.banner .block:nth-child(2) {
+  left: calc(66% + 8vw);
+  top: 5vw;
+}
+.banner .block:nth-child(3) {
+  left: calc(66% + 16vw);
+  top: 9vw;
+}
+ main .contents {
+   flex-direction: column;
+ }
+
+.contents aside {
+  background-color: var(--kp-white);
+  position: relative;
+  padding: 1em;
+}
+.contents article {
+  padding: 1rem 1rem 3rem 1rem;
+}
+
+@media (min-width: 800px) {
+  main .contents {
+    flex-direction: row;
+  }
+  .contents aside {
+    flex: 1;
+    top: -3em;
+    padding: 2em;
+  }
+  .contents article {
+    flex: 2;
+    padding: 1.5rem 2rem 5rem 2rem;
+    margin-right: 0;
+  }  
+}
+
+@media (min-width: 1100px) {
+  main .contents {
+    flex-direction: row;
+  }
+  .contents aside {
+    flex: 2;
+    top: -3em;
+    padding: 2em;
+  }
+  .contents article {
+    flex: 5;
+    padding: 2rem 2rem 5rem 2rem;
+    margin-right: 2em;
+  }  
+}
+
+@media (min-width: 1400px) {
+  main .contents {
+    flex-direction: row;
+  }
+  .contents aside {
+    flex: 2;
+    top: -3em;
+    padding: 2em;
+  }
+  .contents article {
+    flex: 7;
+    padding: 2em;
+    margin-right: 4em;
+  }  
+}
+
+.contents article section {
+  max-width: 40em;
+  font-size: 1.25rem;
+  line-height: 1.618;
+}
+
+.contents article section p {
+  font-family: var(--font-stack-serif);
+}
+
+/* footer stuff */
+footer {
+  border-top: 1px solid var(--kp-gray);
+  font-size: 90%;
+}
+
+footer .flex {
+  flex-direction: column;
+}
+
+footer .flex div {
+  flex: 1;
+  padding: 1.25rem;
+}
+
+footer section .accredation {
+  flex-direction: row;
+}
+
+footer section .accredation svg {
+  min-width: 1.5em;
+  max-width: 3em;
+  align-self: start;
+  margin-right: 1em;
+}
+
+footer nav {
+  border-top: 1px solid;
+  width: 100%;
+}
+
+footer nav > ul > li {
+  padding: 1.25rem;
+  flex: auto;
+}
+
+footer nav a {
+  text-decoration: none;
+}
+
+footer nav .sub .subMenu {
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 400px) {
+  footer nav > .flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 600px) {
+  footer nav > .flex > li {
+    flex: 1;
+  }
+  footer nav > .flex > li:nth-child(2),
+  footer nav > .flex > li:nth-child(3) {
+    flex: 2;
+  }
+}
+
+@media (min-width: 900px) {
+  footer .flex {
+    flex-direction: row;
+  }  
+  footer .flex div {
+    padding: 1.5rem;
+    align-self: start;
+  }
+  footer .flex div:nth-child(2) {
+    flex: 2;
+  }  
+  footer section .accredation {
+    flex-direction: column;
+  }
+  footer nav > ul > li {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  footer .flex {
+    flex-direction: row;
+  }  
+  footer .flex div {
+    padding: 2rem;
+    align-self: start;
+  }
+  footer section .accredation {
+    flex-direction: row;
+  }
+  footer nav > ul > li {
+    padding: 2rem;
+  }
+  footer nav > .flex {
+    flex-wrap: nowrap;
+  }
+  footer nav > .flex > li {
+    flex: auto;
+  }
+  footer nav > .flex > li:nth-child(2),
+  footer nav > .flex > li:nth-child(3) {
+    flex: auto;
+  }
+  footer nav .sub .subMenu {
+    padding-left: 2rem;
+  }
+}
