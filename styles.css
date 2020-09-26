@@ -319,6 +319,21 @@ main {
   max-width: 100%;
 }
 
+.index .blocks {
+  border-top: 1px solid;
+}
+
+.index .blocks .block p {
+  font-weight: 300;
+  font-size: 2em;
+  letter-spacing: .1em;
+}
+
+/* background images!? */
+.index .blocks .block:nth-child(12) {
+  background-image: url(/i/markus-spiske-nvKQ1kxheRc-unsplash.jpg);
+}
+
 @media (min-width: 500px) {
   .logo {
     height: 33vh;
