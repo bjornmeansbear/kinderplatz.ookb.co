@@ -757,7 +757,7 @@ td::before {
 .gallery .photos > li {
   display: block;
   flex: auto;
-  width: calc(100% / 7);
+  width: calc(100% / 3);
   height: auto;
   padding: .25rem;
   margin: 0;
@@ -770,4 +770,48 @@ td::before {
 .gallery .photos li img {
     width: 100%;
     height: auto;
+}
+
+@media (min-width: 600px) {
+  .gallery .photos > li {
+    display: block;
+    flex: auto;
+    width: calc(100% / 4);
+    height: auto;
+    padding: .25rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .gallery .photos > li {
+    display: block;
+    flex: auto;
+    width: calc(100% / 5);
+    height: auto;
+    padding: .25rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .gallery .photos > li {
+    display: block;
+    flex: auto;
+    width: calc(100% / 6);
+    height: auto;
+    padding: .25rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery .photos > li {
+    display: block;
+    flex: auto;
+    width: calc(100% / 7);
+    height: auto;
+    padding: .25rem;
+    margin: 0;
+  }
 }
