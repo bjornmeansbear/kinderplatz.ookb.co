@@ -749,13 +749,18 @@ td::before {
 }
 
 .gallery .photos.flex {
- flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -.5rem;
+  padding: 0;;
 }
 
 .gallery .photos > li {
   display: block;
-  flex: 1;
-  width: calc(100% / 7)
+  flex: auto;
+  width: calc(100% / 7);
+  height: auto;
+  padding: .25rem;
+  margin: 0;
 }
 
 .gallery .photos li a {
@@ -764,4 +769,5 @@ td::before {
 .gallery .photos li a,
 .gallery .photos li img {
     width: 100%;
+    height: auto;
 }
