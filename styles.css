@@ -1,23 +1,59 @@
 :root {
-  --kp-pink:      rgba(236,064,121,1);
-  --kp-brown:     rgba(047,041,038,1);
-  --kp-gray:      rgba(132,132,120,1);
-  --kp-darkgray:  rgba(096,103,103,1);
-  --kp-lighgray:  rgba(194,211,186,1);
-  --kp-red:       rgba(183,080,081,1);
-  --kp-orange:    rgba(183,120,099,1);
-  --kp-yellow:    rgba(183,172,099,1);
-  --kp-green:     rgba(140,165,115,1);
-  --kp-blue:      rgba(140,155,165,1);
-  --kp-darkblue:  rgba(013,048,061,1);
-  --kp-purple:    rgba(174,115,155,1);
-  --kp-darkpurple:rgba(119,041,095,1);
-  --kp-black:     rgba(000,000,000,1);
-  --kp-white:     rgba(255,255,255,1);
+  /* color modules */
+  --kp-pink:       rgba(204,102,153,1);
+  --kp-pink-85p:   rgba(204,102,153,.85);
+  --kp-pink-20p:   rgba(204,102,153,.2);
+  --kp-brown:      rgba(047,041,038,1);
+  --kp-gray:       rgba(132,132,120,1);
+  --kp-darkgray:   rgba(096,103,103,1);
+  --kp-red:        rgba(255,000,000,1);
+  --kp-red-80p:    rgba(255,000,000,.8);
+  --kp-red-15p:    rgba(255,000,000,.15);
+  --kp-orange:     rgba(255,102,000,1);
+  --kp-orange-80p: rgba(255,102,000,.8);
+  --kp-orange-15p: rgba(255,102,000,.15);
+  --kp-yellow:     rgba(225,190,000,1);
+  --kp-yellow-85p: rgba(225,190,000,.85);
+  --kp-yellow-20p: rgba(225,190,000,.2);
+  --kp-gold:       rgba(120,100,060,1);
+  --kp-lightgreen: rgba(203,255,050,1);
+  --kp-green:      rgba(010,180,060,1);
+  --kp-green-80p:  rgba(010,180,060,.8);
+  --kp-green-15p:  rgba(010,180,060,.15);
+  --kp-blue:       rgba(030,120,200,1);
+  --kp-blue-80p:   rgba(030,120,200,.8);
+  --kp-blue-15p:   rgba(030,120,200,.15);
+  --kp-darkblue:   rgba(010,040,066,1);
+  --kp-purple:     rgba(200,100,200,1);
+  --kp-purple-80p: rgba(200,100,200,.8);
+  --kp-purple-15p: rgba(200,100,200,.15);
+  --kp-darkpurple: rgba(100,050,100,1);
+  --kp-black:      rgba(010,000,000,1);
+  --kp-white:      rgba(255,250,250,1);
 
+  /* font stack modules */
   --font-stack-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-stack-serif:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+/* shoot, have to do an individual class for each "section" */
+.intro       .banner .logoCard { background-color: var(--kp-orange-80p); }
+.approach    .banner .logoCard { background-color: var(--kp-yellow-85p); }
+.ageGroup    .banner .logoCard { background-color: var(--kp-green-80p); }
+.tuition     .banner .logoCard { background-color: var(--kp-blue-80p); }
+.credentials .banner .logoCard { background-color: var(--kp-purple-80p); }
+.contact     .banner .logoCard { background-color: var(--kp-red-80p) }
+.gallery     .banner .logoCard { background-color: var(--kp-pink-85p) }
+
+/* shoot, have to do an individual class for each main text area too! */
+.intro       article { background-color: var(--kp-orange-15p); }
+.approach    article { background-color: var(--kp-yellow-20p); }
+.ageGroup    article { background-color: var(--kp-green-15p); }
+.tuition     article { background-color: var(--kp-blue-15p); }
+.credentials article { background-color: var(--kp-purple-15p); }
+.contact     article { background-color: var(--kp-red-15p); }
+.gallery     article { background-color: var(--kp-pink-20p); }
+
 
 /********* color modules **********/
 .bg-trans              { background-color: transparent; }
@@ -25,10 +61,10 @@
 .bg-brown              { background-color: var(--kp-brown); }
 .bg-gray               { background-color: var(--kp-gray); }
 .bg-darkgray           { background-color: var(--kp-darkgray); }
-.bg-lightgray          { background-color: var(--kp-lightgray); }
 .bg-red                { background-color: var(--kp-red); }
 .bg-orange             { background-color: var(--kp-orange); }
 .bg-yellow             { background-color: var(--kp-yellow); }
+.bg-lightgreen         { background-color: var(--kp-lightgreen); }
 .bg-green              { background-color: var(--kp-green); }
 .bg-blue               { background-color: var(--kp-blue); }
 .bg-purple             { background-color: var(--kp-purple); }
@@ -39,7 +75,6 @@
 .bg-brown-hover:hover       { background-color: var(--kp-brown); }
 .bg-gray-hover:hover        { background-color: var(--kp-gray); }
 .bg-darkgray-hover:hover    { background-color: var(--kp-darkgray); }
-.bg-lightgray-hover:hover   { background-color: var(--kp-lightgray); }
 .bg-red-hover:hover         { background-color: var(--kp-red); }
 .bg-orange-hover:hover      { background-color: var(--kp-orange); }
 .bg-yellow-hover:hover      { background-color: var(--kp-yellow); }
@@ -53,7 +88,6 @@
 .brown                 { color: var(--kp-brown); }
 .gray                  { color: var(--kp-gray); }
 .darkgray              { color: var(--kp-darkgray); }
-.lightgray             { color: var(--kp-lightgray); }
 .red                   { color: var(--kp-red); }
 .orange                { color: var(--kp-orange); }
 .yellow                { color: var(--kp-yellow); }
@@ -68,7 +102,6 @@
 .brown-hover:hover                 { color: var(--kp-brown); }
 .gray-hover:hover                  { color: var(--kp-gray); }
 .darkgray-hover:hover              { color: var(--kp-darkgray); }
-.lightgray-hover:hover             { color: var(--kp-lightgray); }
 .red-hover:hover                   { color: var(--kp-red); }
 .orange-hover:hover                { color: var(--kp-orange); }
 .yellow-hover:hover                { color: var(--kp-yellow); }
@@ -96,7 +129,6 @@
 .border-brown-hover:hover          { border-color: var(--kp-brown); }
 .border-gray-hover:hover           { border-color: var(--kp-gray); }
 .border-darkgray-hover:hover       { border-color: var(--kp-darkgray); }
-.border-lightgray-hover:hover      { border-color: var(--kp-lightgray); }
 .border-red-hover:hover            { border-color: var(--kp-red); }
 .border-orange-hover:hover         { border-color: var(--kp-orange); }
 .border-yellow-hover:hover         { border-color: var(--kp-yellow); }
@@ -110,7 +142,6 @@
 .fill-brown          { fill: var(--kp-brown); }
 .fill-gray           { fill: var(--kp-gray); }
 .fill-darkgray       { fill: var(--kp-darkgray); }
-.fill-lightgray      { fill: var(--kp-lightgray); }
 .fill-red            { fill: var(--kp-red); }
 .fill-orange         { fill: var(--kp-orange); }
 .fill-yellow         { fill: var(--kp-yellow); }
@@ -131,7 +162,6 @@ nav .pink:hover                { background-color: var(--kp-pink); color: var(--
 nav .brown:hover               { background-color: var(--kp-brown); color: var(--kp-white); }
 nav .gray:hover                { background-color: var(--kp-gray); color: var(--kp-white); }
 nav .darkgray:hover            { background-color: var(--kp-darkgray); color: var(--kp-white); }
-nav .lightgray:hover           { background-color: var(--kp-lightgray); color: var(--kp-white); }
 nav .red:hover                 { background-color: var(--kp-red); color: var(--kp-white); }
 nav .orange:hover              { background-color: var(--kp-orange); color: var(--kp-white); }
 nav .yellow:hover              { background-color: var(--kp-yellow); color: var(--kp-white); }
@@ -139,7 +169,7 @@ nav .green:hover               { background-color: var(--kp-green); color: var(-
 nav .blue:hover                { background-color: var(--kp-blue); color: var(--kp-white); }
 nav .purple:hover              { background-color: var(--kp-purple); color: var(--kp-white); }
 nav .black:hover               { background-color: var(--kp-black); color: var(--kp-white); }
-/* nav .white:hover               { background-color: var(--kp-white); color: var(--kp-black); } */
+nav .white:hover               { background-color: var(--kp-white); color: var(--kp-black); }
 
 /** General stuff **/
 html,
@@ -148,6 +178,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   min-height: 100%;
+  background-color: var(--kp-white);
 }
 
 *,
@@ -158,6 +189,7 @@ body {
 
 /* some good accessible typography */
 html {
+  color: var(--kp-brown);
   font-family: var(--font-stack-sans);
   font-size: 20px;
   font-weight: 400;
@@ -412,25 +444,6 @@ main .logo.banner {
   position: relative;
   padding: 1em;
 }
-
-/* shoot, have to do an individual class for each "section" */
-.intro       .banner .logoCard { background-color: rgba(195,115,099,.80); }
-.approach    .banner .logoCard { background-color: rgba(183,172,099,.85); }
-.ageGroup    .banner .logoCard { background-color: rgba(140,165,115,.80); }
-.tuition     .banner .logoCard { background-color: rgba(140,155,165,.80); }
-.credentials .banner .logoCard { background-color: rgba(174,115,155,.80); }
-.contact     .banner .logoCard { background-color: rgba(183,080,081,.80); }
-.gallery     .banner .logoCard { background-color: rgba(236,064,121,.80); }
-
-/* shoot, have to do an individual class for each main text area too! */
-.intro       article { background-color: rgba(195,115,099,.15); }
-.approach    article { background-color: rgba(183,172,099,.20); }
-.ageGroup    article { background-color: rgba(140,165,115,.15); }
-.tuition     article { background-color: rgba(140,155,165,.15); }
-.credentials article { background-color: rgba(174,115,155,.15); }
-.contact     article { background-color: rgba(183,080,081,.15); }
-.gallery     article { background-color: rgba(236,064,121,.20); }
-
 
 .banner .logoCard svg {
   min-width: none;
