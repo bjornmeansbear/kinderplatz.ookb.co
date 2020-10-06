@@ -333,14 +333,14 @@ main {
 .blocks {
   width: 100%;
   flex-wrap: wrap;
-  border: 2px solid white;
+  border: 2px solid var(--kp-white);
   align-items: top;
 }
 
 .blocks .block {
   width: calc((100vw - 4px) / 2);
   height: calc((100vw - 4px) / 2);
-  border: 2px solid white;
+  border: 2px solid var(--kp-white);
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -379,17 +379,17 @@ main {
   background-position-x: 33%;
 }
 .index .blocks .block:nth-child(9) {
-  background-image: url(/i/markus-spiske-nvKQ1kxheRc-unsplash.jpg);
+  background-image: url(/i/caleb-woods-ecRuhwPIW7c-unsplash.jpg);
 }
 .index .blocks .block:nth-child(11) {
-  background-image: url(/i/markus-spiske-nvKQ1kxheRc-unsplash.jpg);
+  background-image: url(/i/caleb-woods-VZILDYoqn_U-unsplash.jpg);
 }
 .index .blocks .block:nth-child(12) {
   background-image: url(/i/markus-spiske-nvKQ1kxheRc-unsplash.jpg);
 }
 .index .blocks .block.imgBlock p {
   font-weight: 700;
-  color: white;
+  color: var(--kp-white);
 }
 
 @media (min-width: 500px) {
@@ -708,7 +708,7 @@ tr:nth-child(even) {
 }
 
 thead tr:first-child {
-  background-color: white;
+  background-color: var(--kp-white);
 }
 
 .subnote {
