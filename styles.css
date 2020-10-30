@@ -12,6 +12,7 @@
   --kp-orange:     rgba(255,102,000,1);
   --kp-orange-80p: rgba(255,102,000,.8);
   --kp-orange-15p: rgba(255,102,000,.15);
+  --kb-darkorange: rgba(128,051,000,1); /* use this for type? */
   --kp-yellow:     rgba(225,190,000,1);
   --kp-yellow-85p: rgba(225,190,000,.85);
   --kp-yellow-20p: rgba(225,190,000,.2);
@@ -154,7 +155,7 @@
 [class*="-hover"], 
 nav a, 
 button { 
-  transition: all 250ms; 
+  transition: background-color 250ms, color 250ms, fill 250ms; 
 }
 
 /** links? **/
@@ -575,7 +576,6 @@ main .logo.banner {
 
 /* footer stuff */
 footer {
-  border-top: 1px solid var(--kp-gray);
   font-size: 90%;
 }
 
@@ -599,8 +599,11 @@ footer section .accredation svg {
   margin-right: 1em;
 }
 
+footer > section {
+  border-top: 1px solid var(--kp-gray);
+}
+
 footer nav {
-  border-top: 1px solid;
   width: 100%;
 }
 
@@ -721,7 +724,7 @@ td::before {
 }
 /* Skinny Screen Solution ?? */
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1000px) {
   /* reset/undo */
   tr:nth-child(odd)    { background-color: transparent; }
   tr:nth-child(even)   { background-color: transparent; }
@@ -853,4 +856,38 @@ td::before {
     padding: .25rem;
     margin: 0;
   }
+}
+
+/*********/
+
+/* COVID Banner 2020 */
+#topBanner {
+  margin-bottom: .5em;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+  color: var(--kp-white);
+}
+
+.covid19 {
+  width: 100%;
+  font-family: sans-serif;
+  padding: 1em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#topBanner p,
+#topBanner a  {
+  color: var(--kp-white);
+  transition: color 250ms ease;
+}
+
+.covid19 p,
+.covid19 a  {
+  margin: 0;
+  padding: 0 0.5em;
+}
+
+#topBanner div a:hover {
+  color: var(--kp-black);
 }
