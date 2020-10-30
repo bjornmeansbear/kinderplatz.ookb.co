@@ -12,10 +12,35 @@
     <link href="../styles.css" type="text/css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="approach">
+
+    <div class="flex bg-orange covid19" id="topBanner">
+      <p><b>Covid19 / Health and Safety First</b></p>
+      <p>::</p>
+      <a href="COVID_protocol_pdfs/extra_precautions_520.pdf"><u>Extra Precautions</u></a>
+      <p>::</p>
+      <a href="COVID_protocol_pdfs/new_procedures_620.pdf"><u>New Procedures</u></a>
+      <p>::</p>
+      <a href="COVID_protocol_pdfs/drop_off_520.pdf"><u>Drop Off and Pick Up Instructions</u></a>
+      <p>::</p>
+      <a href="COVID_protocol_pdfs/visitor_protocol_520.pdf"><u>Visitor Protocol</u></a>
+    </div>
 
     <header>
-      <section class="logoStripe flex">
+      <nav id="mainMenu">
+        <ul class="flex list-reset">
+          <li><a class="orange" href="/introduction.html">Introduction</a></li>
+          <li class="active bg-yellow"><a class="white">Our Approach</a></li>
+          <li><a class="green" href="/ageGroups/">Age Groups</a></li>
+          <li><a class="blue" href="/tuition/">Tuition</a></li>
+          <li><a class="yellow" href="/credentials.html">Credentials</a></li>
+          <li><a class="red" href="/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="logo banner flex bg-yellow">
         <div class="logoCard flex">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 261.6 42.84">
             <g class="wrap">
@@ -24,56 +49,31 @@
             </g>
           </svg>
         </div>
-        <div class="flex blockTych">
-          <div class="block bg-yellow white flex">
-            <p>fun</p>
-          </div>
-          <div class="block flex">
-              <img src='https://kinderplatz.ookb.co/img/approach03.jpg' />
-          </div>
-          <div class="block bg-yellow white flex">
-            <p>respect</p>
-          </div>
-          <div class="block flex">
-            <img src='https://kinderplatz.ookb.co/img/approach04.jpg' />
-          </div>
-        </div>
-      </section>
-      <nav id="mainMenu">
-        <ul class="flex list-reset">
-          <li><a class="orange" href="introduction.html">Introduction</a></li>
-          <li class="active bg-yellow"><a class="white" href="#">Our Approach</a></li>
-          <li><a class="green" href="#">Age Groups</a></li>
-          <li><a class="blue" href="#">Tuition</a></li>
-          <li><a class="purple" href="#">Credentials</a></li>
-          <li><a class="red" href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <div class="logo banner flex bg-yellow">
         <h1 class="white">Our Approach</h1>
-      </div>
 
+      </div>
       <div class="contents flex">
         <aside>
+          <div class="image-block">
+            <img src="https://kinderplatzkids.com/img/intro02.jpg" >
+          </div>
           <h2>Section Contents</h2>
           <section>
             <ul class="list-reset">
-              <li><a class="yellow" href="#">Program Goals</a></li>
-              <li><a class="yellow" href="#">Curriculum &amp; Assessments</a></li>
-              <li><a class="yellow" href="#">Behavior Guidance</a></li>
-              <li><a class="yellow" href="#">Diversity</a></li>
-              <li><a class="yellow" href="#">Community</a></li>
-              <li><a class="yellow" href="#">Parent Resources</a></li>
-              <li><a class="yellow" href="#">Open Door Policy</a></li>
-              <li><a class="yellow" href="#">Enrichment Programs</a></li>
+              <li><a class="yellow" href="goals.html">Program Goals</a></li>
+              <li><a class="yellow" href="curriculum.html">Curriculum &amp; Assessments</a></li>
+              <li><a class="yellow" href="behavior.html">Behavior Guidance</a></li>
+              <li><a class="yellow" href="diversity.html">Diversity</a></li>
+              <li><a class="yellow" href="community.html">Community</a></li>
+              <li><a class="yellow" href="resources.html">Parent Resources</a></li>
+              <li><a class="yellow" href="open-door.html">Open Door Policy</a></li>
+              <li><a class="yellow" href="enrichment.html">Enrichment Programs</a></li>
             </ul>
           </section>
         </aside>
 
-        <article style="background-color: rgba(183,172,099,.2);">
+        <article>
           <h2>Welcome to Kinderplatz</h2>
           <section>
             <p>
@@ -216,7 +216,22 @@
           </ul>
         </nav>
       </section>
+
+      <section class="flex covid19">
+        <p><b>Covid19 / Health and Safety First</b></p>
+        <p>::</p>
+        <a class="gray yellow-hover" href="COVID_protocol_pdfs/extra_precautions_520.pdf"><u>Extra Precautions</u></a>
+        <p>::</p>
+        <a class="gray yellow-hover" href="COVID_protocol_pdfs/new_procedures_620.pdf"><u>New Procedures</u></a>
+        <p>::</p>
+        <a class="gray yellow-hover" href="COVID_protocol_pdfs/drop_off_520.pdf"><u>Drop Off and Pick Up Instructions</u></a>
+        <p>::</p>
+        <a class="gray yellow-hover" href="COVID_protocol_pdfs/visitor_protocol_520.pdf"><u>Visitor Protocol</u></a>
+      </section>
+
     </footer>
+
+    <div class="bottomStripe yellow"></div>
 
   </body>
 </html>
