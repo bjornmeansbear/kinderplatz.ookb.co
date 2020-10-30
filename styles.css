@@ -172,6 +172,8 @@ nav .purple:hover              { background-color: var(--kp-purple); color: var(
 nav .black:hover               { background-color: var(--kp-black); color: var(--kp-white); }
 nav .white:hover               { background-color: var(--kp-white); color: var(--kp-black); }
 
+nav .active a:hover            { background-color: inherit !important; color: var(--kp-white) !important; }
+
 /** General stuff **/
 html,
 body {
@@ -516,6 +518,10 @@ main .logo.banner {
   width: 100%;
   height: auto;
   border: .1rem solid var(--kp-white);
+}
+
+article .lead {
+  font-size: 1.25em;
 }
 
 @media (min-width: 800px) {
