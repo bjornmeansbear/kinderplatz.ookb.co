@@ -64,6 +64,7 @@
 .bg-red                { background-color: var(--kp-red); }
 .bg-orange             { background-color: var(--kp-orange); }
 .bg-yellow             { background-color: var(--kp-yellow); }
+.bg-gold               { background-color: var(--kp-gold); }
 .bg-lightgreen         { background-color: var(--kp-lightgreen); }
 .bg-green              { background-color: var(--kp-green); }
 .bg-blue               { background-color: var(--kp-blue); }
@@ -91,6 +92,7 @@
 .red                   { color: var(--kp-red); }
 .orange                { color: var(--kp-orange); }
 .yellow                { color: var(--kp-yellow); }
+.gold                  { color: var(--kp-gold); }
 .green                 { color: var(--kp-green); }
 .blue                  { color: var(--kp-blue); }
 .purple                { color: var(--kp-purple); }
