@@ -45,8 +45,9 @@
 .ageGroup    .banner .logoCard { background-color: var(--kp-green-80p); }
 .tuition     .banner .logoCard { background-color: var(--kp-blue-80p); }
 .credentials .banner .logoCard { background-color: var(--kp-purple-80p); }
-.contact     .banner .logoCard { background-color: var(--kp-red-80p) }
-.gallery     .banner .logoCard { background-color: var(--kp-pink-85p) }
+.contact     .banner .logoCard { background-color: var(--kp-red-80p); }
+.gallery     .banner .logoCard,
+.other       .banner .logoCard { background-color: var(--kp-pink-85p); }
 
 /* shoot, have to do an individual class for each main text area too! */
 .intro       article { background-color: var(--kp-orange-15p); }
@@ -55,7 +56,8 @@
 .tuition     article { background-color: var(--kp-blue-15p); }
 .credentials article { background-color: var(--kp-purple-15p); }
 .contact     article { background-color: var(--kp-red-15p); }
-.gallery     article { background-color: var(--kp-pink-20p); }
+.gallery     article,
+.other       article { background-color: var(--kp-pink-20p); }
 
 /********* color modules **********/
 .bg-trans              { background-color: transparent; }
