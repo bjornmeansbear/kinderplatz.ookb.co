@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 :root {
   /* color modules */
   --kp-pink:       rgba(204,102,153,1);
@@ -236,7 +238,24 @@ blockquote {
   margin-left: 0;
   padding-left: 1em;
   font-family: var(--font-stack-serif);
+  position: relative;
+  display: block;
+  z-index: 2;
 }
+/* Blockquote right double quotes */
+blockquote:after {
+  position: absolute;
+  content: "”";
+  font-size: 30rem;
+  line-height: 0;
+  bottom: -2rem;
+  right: 4rem;
+  color: var(--kp-gray);
+  z-index: -1;
+  opacity: .15;
+  font-family: var(--font-stack-sans);
+}
+
 
 .flex {
   display: flex;
