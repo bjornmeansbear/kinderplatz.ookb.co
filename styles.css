@@ -371,10 +371,6 @@ main {
   max-width: 100%;
 }
 
-.index .blocks {
-  border-top: 1px solid;
-}
-
 .index .blocks .block p {
   font-size: 2em;
   letter-spacing: .1em;
@@ -917,9 +913,12 @@ td::before {
   width: 100%;
   font-family: sans-serif;
   padding: 1em;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+}
+
+.divider {
+  display: none;
 }
 
 #topBanner p,
@@ -934,5 +933,17 @@ td::before {
 .covid19 a  {
   margin: 0;
   padding: 0 0.5em;
+}
+
+@media (min-width: 900px) {
+  .covid19 {
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .divider {
+    display: initial;
+  }
 }
 
