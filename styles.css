@@ -581,6 +581,7 @@ main .logo.banner {
 .credentials .contents aside .image-block:before { background-color: var(--kp-purple-15p); }
 .contact .contents aside .image-block:before     { background-color: var(--kp-red-15p); }
 .approach .contents aside .image-block:before    { background-color: var(--kp-yellow-20p); }
+.tuition .contents aside .image-block:before     { background-color: var(--kp-blue-15p); }
 
 /** main text area **/
 article .lead {
