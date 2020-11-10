@@ -1000,3 +1000,20 @@ td::before {
   }
 }
 
+.img-group {
+  border-bottom: 1px solid var(--kp-purple);
+  border-top: 1px solid var(--kp-purple);
+  padding-top: 1em;
+  padding-bottom: .5em;
+  margin-bottom: 2em;
+}
+.img-group a {
+  display: block;
+  max-width: 250px;
+  min-width: 150px;
+  margin-right: 3em;
+}
+
+.img-group a img {
+  max-width: 100%;
+}
