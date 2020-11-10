@@ -414,15 +414,12 @@ main {
 }
 .index .blocks .block:nth-child(2) {
   background-image: url(/f/i/andriyko-podilnyk-XH9NoY2RTwY-unsplash.jpg);
-  background-position: -10%;
 }
 .index .blocks .block:nth-child(3) {
   background-image: url(/f/i/bernard-hermant-5zu86kyV_UY-unsplash.jpg);
-  background-position-x: 33%;
 }
 .index .blocks .block:nth-child(6) {
   background-image: url(/f/i/michael-mims-ISczHsDwK1M-unsplash.jpg);
-  background-position-x: 33%;
 }
 .index .blocks .block:nth-child(9) {
   background-image: url(/f/i/caleb-woods-ecRuhwPIW7c-unsplash.jpg);
@@ -579,10 +576,11 @@ main .logo.banner {
   background:transparent;
   transition: all 0.3s linear;
   z-index: 2;
-  opacity: .25;
+  opacity: .2;
 }
 .intro .contents aside .image-block:before       { background-color: var(--kp-orange); }
 .credentials .contents aside .image-block:before { background-color: var(--kp-purple); }
+.contact .contents aside .image-block:before     { background-color: var(--kp-red); }
 
 /** main text area **/
 article .lead {
