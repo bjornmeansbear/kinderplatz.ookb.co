@@ -576,11 +576,11 @@ main .logo.banner {
   background:transparent;
   transition: all 0.3s linear;
   z-index: 2;
-  opacity: .2;
 }
-.intro .contents aside .image-block:before       { background-color: var(--kp-orange); }
-.credentials .contents aside .image-block:before { background-color: var(--kp-purple); }
-.contact .contents aside .image-block:before     { background-color: var(--kp-red); }
+.intro .contents aside .image-block:before       { background-color: var(--kp-orange-15p); }
+.credentials .contents aside .image-block:before { background-color: var(--kp-purple-15p); }
+.contact .contents aside .image-block:before     { background-color: var(--kp-red-15p); }
+.approach .contents aside .image-block:before    { background-color: var(--kp-yellow-20p); }
 
 /** main text area **/
 article .lead {
