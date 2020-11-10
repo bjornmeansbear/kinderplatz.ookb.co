@@ -581,10 +581,10 @@ main .logo.banner {
   z-index: 2;
   opacity: .25;
 }
-.intro .contents aside .image-block:before {
-  background-color: var(--kp-orange);
-}
+.intro .contents aside .image-block:before       { background-color: var(--kp-orange); }
+.credentials .contents aside .image-block:before { background-color: var(--kp-purple); }
 
+/** main text area **/
 article .lead {
   font-size: 1.25em;
 }
