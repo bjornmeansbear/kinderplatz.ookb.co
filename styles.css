@@ -582,6 +582,7 @@ main .logo.banner {
 .contact .contents aside .image-block:before     { background-color: var(--kp-red-15p); }
 .approach .contents aside .image-block:before    { background-color: var(--kp-yellow-20p); }
 .tuition .contents aside .image-block:before     { background-color: var(--kp-blue-15p); }
+.other .contents aside .image-block:before       { background-color: var(--kp-pink-20p); }
 
 /** main text area **/
 article .lead {
