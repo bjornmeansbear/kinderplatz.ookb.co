@@ -284,6 +284,10 @@ main {
   border-bottom: 3em solid;
 }
 
+aside .spacers ul.list-reset {
+  margin-bottom: 1rem;
+}
+
 /** main nav stuff **/
 /** universal mainNav stuff **/
 /** starting with what happens on skinny screens/phones/Old stuff **/
