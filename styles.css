@@ -546,11 +546,11 @@ main .logo.banner {
   position: relative;
   padding: 1em;
 }
-.contents article {
+article {
   padding: 1rem 1rem 3rem 1rem;
 }
 
-.contents article section.flex {
+article section.flex {
   flex-direction: column;
 }
 
@@ -597,6 +597,26 @@ main .logo.banner {
 article .lead {
   font-size: 1.25em;
 }
+
+/* addendum logos on credentials */
+.img-group {
+  border-bottom: 1px solid var(--kp-purple);
+  border-top: 1px solid var(--kp-purple);
+  padding-top: 1em;
+  padding-bottom: .5em;
+  margin-bottom: 2em;
+}
+.img-group a {
+  display: block;
+  max-width: 250px;
+  min-width: 150px;
+  margin-right: 3em;
+}
+
+.img-group a img {
+  max-width: 100%;
+}
+/***********************************/
 
 @media (max-width: 799px) {
   .contents aside {
@@ -645,20 +665,20 @@ article .lead {
     padding: 2em;
     display: block;
   }
-  .contents article {
+  article {
     flex: 2;
     padding: 1.5rem 2rem 5rem 2rem;
     margin-right: 0;
   }  
-  .gallery .contents article {
+  .gallery article {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  .contents article section.flex {
+  article section.flex {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .contents article section.flex > div {
+  article section.flex > div {
     flex: auto;
     width: 50%;
   }
@@ -673,12 +693,12 @@ article .lead {
     top: -3em;
     padding: 2em;
   }
-  .contents article {
+  article {
     flex: 5;
     padding: 2rem 2rem 5rem 2rem;
     margin-right: 2em;
   }  
-  .gallery .contents article {
+  .gallery article {
     margin-left: 2rem;
     margin-right: 2rem;
   }
@@ -693,28 +713,28 @@ article .lead {
     top: -3em;
     padding: 2em;
   }
-  .contents article {
+  article {
     flex: 7;
     padding: 2em;
     margin-right: 4em;
   }  
-  .gallery .contents article {
+  .gallery article {
     margin-left: 4rem;
     margin-right: 4rem;
   }
-  .contents article section.flex > div {
+  article section.flex > div {
     flex: 1;
     width: auto;
   }
 }
 
-.contents article section {
+article section {
   max-width: 40em;
   font-size: 1.25rem;
   line-height: 1.618;
 }
 
-.contents article section p {
+article section p {
   font-family: var(--font-stack-serif);
 }
 
@@ -930,7 +950,7 @@ td::before {
 
 /* some photo gallery styles */
 
-.gallery .contents article section {
+.gallery article section {
   max-width: 100%;
 }
 
@@ -1057,22 +1077,4 @@ td::before {
   .divider {
     display: initial;
   }
-}
-
-.img-group {
-  border-bottom: 1px solid var(--kp-purple);
-  border-top: 1px solid var(--kp-purple);
-  padding-top: 1em;
-  padding-bottom: .5em;
-  margin-bottom: 2em;
-}
-.img-group a {
-  display: block;
-  max-width: 250px;
-  min-width: 150px;
-  margin-right: 3em;
-}
-
-.img-group a img {
-  max-width: 100%;
 }
