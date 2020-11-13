@@ -14,7 +14,7 @@
   --kp-orange:     rgba(255,102,000,1);
   --kp-orange-80p: rgba(255,102,000,.8);
   --kp-orange-15p: rgba(255,102,000,.15);
-  --kb-darkorange: rgba(128,051,000,1); /* use this for type? */
+  --kb-darkorange: rgba(128,051,000,1);
   --kp-yellow:     rgba(225,190,000,1);
   --kp-yellow-85p: rgba(225,190,000,.85);
   --kp-yellow-20p: rgba(225,190,000,.2);
@@ -803,6 +803,7 @@ footer nav .sub .subMenu {
 @media (min-width: 900px) {
   footer .flex {
     flex-direction: row;
+    flex-wrap: wrap;
   }  
   footer .flex div {
     padding: 1.5rem;
@@ -820,12 +821,8 @@ footer nav .sub .subMenu {
 }
 
 @media (min-width: 1300px) {
-  footer .flex {
-    flex-direction: row;
-  }  
   footer .flex div {
     padding: 2rem;
-    align-self: start;
   }
   footer section .accredation {
     flex-direction: row;
