@@ -550,6 +550,10 @@ main .logo.banner {
   padding: 1rem 1rem 3rem 1rem;
 }
 
+.contents article section.flex {
+  flex-direction: column;
+}
+
 .contents aside .image-block {
   position: relative;
   padding-bottom: calc(100% + 4em);
@@ -594,14 +598,52 @@ article .lead {
   font-size: 1.25em;
 }
 
+@media (max-width: 799px) {
+  .contents aside {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contents aside .image-block {
+    position: relative;
+    padding-bottom: 0;
+    height: auto;
+    margin: 0;
+    width: 50%;
+    order: 1;
+    background-color: transparent;
+  }
+  .contents aside .image-block.top {
+    margin-top: 0;
+  }
+  .contents aside .image-block img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: none;
+    z-index: 1;
+  }
+  .contents aside h2,
+  .contents aside section {
+    width: 100%;
+    order: 2;
+  }
+  .contents aside .image-block:before {
+    content: "";
+    display: none;
+  }
+}
+
 @media (min-width: 800px) {
   main .contents {
     flex-direction: row;
   }
   .contents aside {
+    order: initial;
     flex: 1;
     top: -3em;
     padding: 2em;
+    display: block;
   }
   .contents article {
     flex: 2;
@@ -611,6 +653,14 @@ article .lead {
   .gallery .contents article {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  .contents article section.flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contents article section.flex > div {
+    flex: auto;
+    width: 50%;
   }
 }
 
@@ -651,6 +701,10 @@ article .lead {
   .gallery .contents article {
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+  .contents article section.flex > div {
+    flex: 1;
+    width: auto;
   }
 }
 
