@@ -770,6 +770,14 @@ footer .flex {
   flex-direction: column;
 }
 
+.intro footer .flex        { border-color: var(--kp-orange); }
+.approach footer .flex     { border-color: var(--kp-yellow); }
+.ageGroup footer .flex     { border-color: var(--kp-green); }
+.tuition footer .flex      { border-color: var(--kp-blue); }
+.credentials footer .flex  { border-color: var(--kp-purple); }
+.contact footer .flex      { border-color: var(--kp-red); }
+.other footer .flex        { border-color: var(--kp-pink); }
+
 footer .flex div {
   flex: 1;
   padding: 1.25rem;
