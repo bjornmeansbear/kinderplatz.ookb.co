@@ -229,12 +229,13 @@ html {
 
 @media (min-width: 800px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.375;
   }
 }
 
 body {
-  font-size: 1em;
+  font-size: 1rem;
   min-height: 100%;
   overflow-x: hidden;
 }
@@ -415,7 +416,7 @@ aside .spacers ul.list-reset {
 }
 
 .index .blocks .block p {
-  font-size: 2em;
+  font-size: 2rem;
   letter-spacing: .1em;
 }
 
@@ -757,6 +758,14 @@ article section {
   line-height: 1.618;
 }
 
+@media (min-width: 800px) {
+  article section {
+    max-width: 45em;
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+}
+
 article section p {
   font-family: var(--font-stack-serif);
 }
@@ -880,7 +889,6 @@ footer nav .sub .subMenu {
 table {
   border-collapse: collapse;
   width: 100%;
-  font-size: 20px;
   font-family: sans-serif;
 }
 
