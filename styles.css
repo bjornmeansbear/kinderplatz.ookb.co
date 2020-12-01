@@ -404,16 +404,18 @@ aside .spacers ul.list-reset {
 .blocks {
   width: 100%;
   flex-wrap: wrap;
-  border: 2px solid var(--kp-white);
+  border-bottom: 8px solid var(--kp-white);
   align-items: top;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 
 .blocks .block {
-  width: calc((100vw - 4px) / 2);
-  height: calc((100vw - 4px) / 2);
+  width: calc((100vw / 2) - 4px);
+  height: calc((100vw / 2) - 4px);
   border: 2px solid var(--kp-white);
   align-items: center;
   justify-content: center;
@@ -466,8 +468,8 @@ aside .spacers ul.list-reset {
     height: 33vh;
   }
   .blocks .block {
-    width: calc((100vw - 4px) / 3);
-    height: calc((100vw - 4px) / 3);
+    width: calc((100vw / 3) - 4px);
+    height: calc((100vw / 3) - 4px);
   }
 }
 
@@ -476,8 +478,8 @@ aside .spacers ul.list-reset {
     height: 40vh;
   }
   .blocks .block {
-    width: calc((100vw - 4px) / 4);
-    height: calc((100vw - 4px) / 4);
+    width: calc((100vw / 4) - 4px);
+    height: calc((100vw / 4) - 4px);
   }
 }
 
@@ -486,8 +488,8 @@ aside .spacers ul.list-reset {
     height: 45vh;
   }
   .blocks .block {
-    width: calc((100vw - 4px) / 6);
-    height: calc((100vw - 4px) / 6);
+    width: calc((100vw / 6) - 4px);
+    height: calc((100vw / 6) - 4px);
   }
 }
 
