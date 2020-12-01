@@ -406,6 +406,9 @@ aside .spacers ul.list-reset {
   flex-wrap: wrap;
   border: 2px solid var(--kp-white);
   align-items: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .blocks .block {
@@ -415,6 +418,9 @@ aside .spacers ul.list-reset {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .block img {
