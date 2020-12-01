@@ -433,6 +433,7 @@ aside .spacers ul.list-reset {
 .index .blocks .block p {
   font-size: 2rem;
   letter-spacing: .1em;
+  font-weight: 600;
 }
 
 /* background images!? */
@@ -481,6 +482,10 @@ aside .spacers ul.list-reset {
     width: calc((100vw / 4) - 4px);
     height: calc((100vw / 4) - 4px);
   }
+  .index .blocks .block p {
+    font-size: 2.375rem;
+    letter-spacing: .075em;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -490,6 +495,10 @@ aside .spacers ul.list-reset {
   .blocks .block {
     width: calc((100vw / 6) - 4px);
     height: calc((100vw / 6) - 4px);
+  }
+  .index .blocks .block p {
+    font-size: 3rem;
+    letter-spacing: .075em;
   }
 }
 
