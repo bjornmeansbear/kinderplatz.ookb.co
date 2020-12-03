@@ -271,6 +271,9 @@ blockquote:after {
   font-family: var(--font-stack-sans);
 }
 
+address {
+  font-style: normal;
+}
 
 .flex {
   display: -ms-flexbox;      /* TWEENER - IE 10 */
